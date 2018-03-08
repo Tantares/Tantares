@@ -1,0 +1,97 @@
+// This CLS Patch is for Tanatares derived parts, up-to-date as of 2017/08/01
+
+// Crewed station modules are passable through nodes only.
+
+@PART[Alniyat_Crew_*,Alniyat_Habitation_*,Mira_Crew_1,Acamar_Lab_1,Eridani_Crew_*,Hadar_Crew_1,Vega_Habitation_1]:HAS[!MODULE[ModuleConnectedLivingSpace]]:NEEDS[ConnectedLivingSpace]
+{ 
+        MODULE 
+        {
+                name = ModuleConnectedLivingSpace
+                passable = true
+                surfaceAttachmentsPassable = false
+                passablenodes = top,bottom
+                passableWhenSurfaceAttached = true
+        }
+}
+
+// Uncrewed station parts are passable through nodes only (because how else are you going to get in?)
+
+@PART[Alniyat_Node_1,Alniyat_NodeSupport_1,Eridani_Node_1,Eridani_NodeSupport_1]:HAS[!MODULE[ModuleConnectedLivingSpace]]:NEEDS[ConnectedLivingSpace]
+{    
+        MODULE 
+        {  
+                name = ModuleConnectedLivingSpace
+                passable = true
+                passablenodes = top,bottom
+                surfaceAttachmentsPassable = false
+                passableWhenSurfaceAttached = true
+        }
+}
+
+// A variety of Tantarian adpaters and mounting plates, these are passable for station assembley purposes.
+
+@PART[Alniyat_Mount_*,Eridani_Mount_*,Hadar_Mount_*]:HAS[!MODULE[ModuleConnectedLivingSpace]]:NEEDS[ConnectedLivingSpace]
+{    
+        MODULE 
+        {  
+                name = ModuleConnectedLivingSpace  
+                passable = true  
+                passablenodes = top,bottom  
+                surfaceAttachmentsPassable = false  
+                passableWhenSurfaceAttached = true
+         }
+ }
+
+// The combined Parachute/Decouplers are passable - because soyuz?
+
+@PART[Tantares_Parachute_1,Alnair_Parachute_1]:HAS[!MODULE[ModuleConnectedLivingSpace]]:NEEDS[ConnectedLivingSpace]
+{    
+        MODULE 
+        {  
+                name = ModuleConnectedLivingSpace  
+                passable = true  
+                passablenodes = top,bottom  
+                surfaceAttachmentsPassable = false  
+                passableWhenSurfaceAttached = true
+        }
+}
+
+// The VA pod and the Orbital Modules are passable from both top and bottom nodes
+
+@PART[Tantares_Habitation_*,Tantares_Orbital_*,Alnair_Crew_1]:HAS[!MODULE[ModuleConnectedLivingSpace]]:NEEDS[ConnectedLivingSpace]
+{    
+        MODULE 
+        {  
+                name = ModuleConnectedLivingSpace  
+                passable = true  
+                passablenodes = top,bottom  
+                surfaceAttachmentsPassable = false  
+                passableWhenSurfaceAttached = true 
+        }
+}
+
+//The Soyuz pod and Progress cargo hold are passable from the top node only
+
+@PART[Hamal_Habitation_1,Tantares_Crew_1]:HAS[!MODULE[ModuleConnectedLivingSpace]]:NEEDS[ConnectedLivingSpace]
+{    
+        MODULE 
+        {  
+                name = ModuleConnectedLivingSpace  
+                passable = true  passablenodes = top  
+                surfaceAttachmentsPassable = false  
+                passableWhenSurfaceAttached = true 
+        }
+}
+
+// The LK pod derivative is not passable through anything other than the main hatch.
+
+@PART[Libra_Crew_1]:HAS[!MODULE[ModuleConnectedLivingSpace]]:NEEDS[ConnectedLivingSpace]
+{    
+        MODULE 
+        {  
+                name = ModuleConnectedLivingSpace  
+                passable = false  
+                surfaceAttachmentsPassable = false  
+                passableWhenSurfaceAttached = false 
+        }
+}
