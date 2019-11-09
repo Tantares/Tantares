@@ -844,3 +844,43 @@ SOYUZ
         maxAmount = 98.56
     }
 }
+
+@PART[aquarius_crew_s1p5_1]:NEEDS[TacLifeSupport]:FOR[Tantares]
+{
+    RESOURCE
+    {
+        name = Food
+        amount = 9.873
+        maxAmount = 9.873
+    }
+    RESOURCE
+    {
+        name = Water
+        amount = 6.525
+        maxAmount = 6.525
+    }
+    RESOURCE
+    {
+        name = Oxygen
+        amount = 999.342
+        maxAmount = 999.342
+    }
+    RESOURCE
+    {
+        name = CarbonDioxide
+        amount = 0
+        maxAmount = 863.217
+    }
+    RESOURCE
+    {
+        name = Waste
+        amount = 0
+        maxAmount = 0.9
+    }
+    RESOURCE
+    {
+        name = WasteWater
+        amount = 0
+        maxAmount = 8.316
+    }
+}
