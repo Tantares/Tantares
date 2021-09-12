@@ -1,0 +1,31 @@
+{
+	"NAME": "Tantares",
+	"URL": "https://raw.githubusercontent.com/Tantares/Tantares/master/tantares.version",
+	"DOWNLOAD" : "https://github.com/Tantares/Tantares/releases",
+	"GITHUB": {
+		"USERNAME": "Tantares",
+		"REPOSITORY": "Tantares",
+		"ALLOW_PRE_RELEASE": false
+	},
+	"VERSION": {
+		"MAJOR": 5,
+		"MINOR": 0,
+		"PATCH": 0
+	},
+	"KSP_VERSION":
+    {
+        "MAJOR":1,
+        "MINOR":12,
+        "PATCH":2
+    },
+    "KSP_VERSION_MIN":{
+        "MAJOR":1,
+        "MINOR":10,
+        "PATCH":1
+    },
+    "KSP_VERSION_MAX":{
+        "MAJOR":1,
+        "MINOR":12,
+        "PATCH":99
+    }
+}
