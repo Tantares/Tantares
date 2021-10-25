@@ -1,10 +1,10 @@
 ship = [Meteor]
-version = 1.11.1
+version = 1.12.2
 description = 
 type = VAB
-size = 1.1244154,2.56250191,0.987500012
+size = 1.12441552,2.56250191,0.987500012
 steamPublishedFileId = 0
-persistentId = 3930764535
+persistentId = 4237441919
 rot = 0,0,0,0
 missionFlag = Squad/Flags/stripes
 vesselType = Debris
@@ -592,14 +592,14 @@ PART
 	modMass = 0
 	modSize = 0,0,0
 	link = castor.ion.engine.s0.1_4293844752
-	link = Andromeda.FuelSphere.1_4293661368
-	link = Andromeda.FuelSphere.1_4293660920
-	link = Andromeda.FuelSphere.1_4293660888
-	link = Andromeda.FuelSphere.1_4293660856
-	link = Andromeda.FuelSphere.1_4293660824
-	link = Andromeda.FuelSphere.1_4293660792
-	link = Andromeda.FuelSphere.1_4293660760
-	link = Andromeda.FuelSphere.1_4293660728
+	link = andromeda.sphere.fuel.tank.srf.1_4293661368
+	link = andromeda.sphere.fuel.tank.srf.1_4293660920
+	link = andromeda.sphere.fuel.tank.srf.1_4293660888
+	link = andromeda.sphere.fuel.tank.srf.1_4293660856
+	link = andromeda.sphere.fuel.tank.srf.1_4293660824
+	link = andromeda.sphere.fuel.tank.srf.1_4293660792
+	link = andromeda.sphere.fuel.tank.srf.1_4293660760
+	link = andromeda.sphere.fuel.tank.srf.1_4293660728
 	attN = bottom,dalim.control.s0p5.1_4293897778_0|-0.0625|0_0|-1|0_0|-0.0625|0_0|-1|0
 	attN = top,castor.ion.engine.s0.1_4293844752_0|0.0625|0_0|1|0_0|0.0625|0_0|1|0
 	EVENTS
@@ -1033,7 +1033,7 @@ PART
 }
 PART
 {
-	part = Andromeda.FuelSphere.1_4293661368
+	part = andromeda.sphere.fuel.tank.srf.1_4293661368
 	partName = Part
 	persistentId = 4151400995
 	pos = -0.299999982,14.5625,-1.78813941E-08
@@ -1057,13 +1057,13 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = Andromeda.FuelSphere.1_4293660920
-	sym = Andromeda.FuelSphere.1_4293660888
-	sym = Andromeda.FuelSphere.1_4293660856
-	sym = Andromeda.FuelSphere.1_4293660824
-	sym = Andromeda.FuelSphere.1_4293660792
-	sym = Andromeda.FuelSphere.1_4293660760
-	sym = Andromeda.FuelSphere.1_4293660728
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660920
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660888
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660856
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660824
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660792
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660760
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660728
 	srfN = srfAttach,dalim.adapter.s0p5.s0.1_4293868664,collider,0|0|0,0|0|-1,0|0|0
 	EVENTS
 	{
@@ -1107,6 +1107,38 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_colour
+		currentSubtype = c_white
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = LiquidFuel
@@ -1132,7 +1164,7 @@ PART
 }
 PART
 {
-	part = Andromeda.FuelSphere.1_4293660920
+	part = andromeda.sphere.fuel.tank.srf.1_4293660920
 	partName = Part
 	persistentId = 439162577
 	pos = -0.212131992,14.5625,-0.212132111
@@ -1156,13 +1188,13 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = Andromeda.FuelSphere.1_4293660888
-	sym = Andromeda.FuelSphere.1_4293660856
-	sym = Andromeda.FuelSphere.1_4293660824
-	sym = Andromeda.FuelSphere.1_4293660792
-	sym = Andromeda.FuelSphere.1_4293660760
-	sym = Andromeda.FuelSphere.1_4293660728
-	sym = Andromeda.FuelSphere.1_4293661368
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660888
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660856
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660824
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660792
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660760
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660728
+	sym = andromeda.sphere.fuel.tank.srf.1_4293661368
 	srfN = srfAttach,dalim.adapter.s0p5.s0.1_4293868664,collider,0|0|0,0|0|-1,0|0|0
 	EVENTS
 	{
@@ -1206,6 +1238,38 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_colour
+		currentSubtype = c_white
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = LiquidFuel
@@ -1231,7 +1295,7 @@ PART
 }
 PART
 {
-	part = Andromeda.FuelSphere.1_4293660888
+	part = andromeda.sphere.fuel.tank.srf.1_4293660888
 	partName = Part
 	persistentId = 2756439334
 	pos = 0,14.5625,-0.300000012
@@ -1255,13 +1319,13 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = Andromeda.FuelSphere.1_4293660856
-	sym = Andromeda.FuelSphere.1_4293660824
-	sym = Andromeda.FuelSphere.1_4293660792
-	sym = Andromeda.FuelSphere.1_4293660760
-	sym = Andromeda.FuelSphere.1_4293660728
-	sym = Andromeda.FuelSphere.1_4293661368
-	sym = Andromeda.FuelSphere.1_4293660920
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660856
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660824
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660792
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660760
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660728
+	sym = andromeda.sphere.fuel.tank.srf.1_4293661368
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660920
 	srfN = srfAttach,dalim.adapter.s0p5.s0.1_4293868664,collider,0|0|0,0|0|-1,0|0|0
 	EVENTS
 	{
@@ -1305,6 +1369,38 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_colour
+		currentSubtype = c_white
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = LiquidFuel
@@ -1330,7 +1426,7 @@ PART
 }
 PART
 {
-	part = Andromeda.FuelSphere.1_4293660856
+	part = andromeda.sphere.fuel.tank.srf.1_4293660856
 	partName = Part
 	persistentId = 2822610569
 	pos = 0.212132052,14.5625,-0.212132037
@@ -1354,13 +1450,13 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = Andromeda.FuelSphere.1_4293660824
-	sym = Andromeda.FuelSphere.1_4293660792
-	sym = Andromeda.FuelSphere.1_4293660760
-	sym = Andromeda.FuelSphere.1_4293660728
-	sym = Andromeda.FuelSphere.1_4293661368
-	sym = Andromeda.FuelSphere.1_4293660920
-	sym = Andromeda.FuelSphere.1_4293660888
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660824
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660792
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660760
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660728
+	sym = andromeda.sphere.fuel.tank.srf.1_4293661368
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660920
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660888
 	srfN = srfAttach,dalim.adapter.s0p5.s0.1_4293868664,collider,0|0|0,0|0|-1,0|0|0
 	EVENTS
 	{
@@ -1404,6 +1500,38 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_colour
+		currentSubtype = c_white
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = LiquidFuel
@@ -1429,7 +1557,7 @@ PART
 }
 PART
 {
-	part = Andromeda.FuelSphere.1_4293660824
+	part = andromeda.sphere.fuel.tank.srf.1_4293660824
 	partName = Part
 	persistentId = 3117942134
 	pos = 0.299999982,14.5625,-1.78813941E-08
@@ -1453,13 +1581,13 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = Andromeda.FuelSphere.1_4293660792
-	sym = Andromeda.FuelSphere.1_4293660760
-	sym = Andromeda.FuelSphere.1_4293660728
-	sym = Andromeda.FuelSphere.1_4293661368
-	sym = Andromeda.FuelSphere.1_4293660920
-	sym = Andromeda.FuelSphere.1_4293660888
-	sym = Andromeda.FuelSphere.1_4293660856
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660792
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660760
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660728
+	sym = andromeda.sphere.fuel.tank.srf.1_4293661368
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660920
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660888
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660856
 	srfN = srfAttach,dalim.adapter.s0p5.s0.1_4293868664,collider,0|0|0,0|0|-1,0|0|0
 	EVENTS
 	{
@@ -1503,6 +1631,38 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_colour
+		currentSubtype = c_white
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = LiquidFuel
@@ -1528,7 +1688,7 @@ PART
 }
 PART
 {
-	part = Andromeda.FuelSphere.1_4293660792
+	part = andromeda.sphere.fuel.tank.srf.1_4293660792
 	partName = Part
 	persistentId = 2683869177
 	pos = 0.212132037,14.5625,0.212132022
@@ -1552,13 +1712,13 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = Andromeda.FuelSphere.1_4293660760
-	sym = Andromeda.FuelSphere.1_4293660728
-	sym = Andromeda.FuelSphere.1_4293661368
-	sym = Andromeda.FuelSphere.1_4293660920
-	sym = Andromeda.FuelSphere.1_4293660888
-	sym = Andromeda.FuelSphere.1_4293660856
-	sym = Andromeda.FuelSphere.1_4293660824
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660760
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660728
+	sym = andromeda.sphere.fuel.tank.srf.1_4293661368
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660920
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660888
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660856
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660824
 	srfN = srfAttach,dalim.adapter.s0p5.s0.1_4293868664,collider,0|0|0,0|0|-1,0|0|0
 	EVENTS
 	{
@@ -1602,6 +1762,38 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_colour
+		currentSubtype = c_white
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = LiquidFuel
@@ -1627,7 +1819,7 @@ PART
 }
 PART
 {
-	part = Andromeda.FuelSphere.1_4293660760
+	part = andromeda.sphere.fuel.tank.srf.1_4293660760
 	partName = Part
 	persistentId = 1516269143
 	pos = -2.6226834E-08,14.5625,0.300000012
@@ -1651,13 +1843,13 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = Andromeda.FuelSphere.1_4293660728
-	sym = Andromeda.FuelSphere.1_4293661368
-	sym = Andromeda.FuelSphere.1_4293660920
-	sym = Andromeda.FuelSphere.1_4293660888
-	sym = Andromeda.FuelSphere.1_4293660856
-	sym = Andromeda.FuelSphere.1_4293660824
-	sym = Andromeda.FuelSphere.1_4293660792
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660728
+	sym = andromeda.sphere.fuel.tank.srf.1_4293661368
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660920
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660888
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660856
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660824
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660792
 	srfN = srfAttach,dalim.adapter.s0p5.s0.1_4293868664,collider,0|0|0,0|0|-1,0|0|0
 	EVENTS
 	{
@@ -1701,6 +1893,38 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_colour
+		currentSubtype = c_white
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = LiquidFuel
@@ -1726,7 +1950,7 @@ PART
 }
 PART
 {
-	part = Andromeda.FuelSphere.1_4293660728
+	part = andromeda.sphere.fuel.tank.srf.1_4293660728
 	partName = Part
 	persistentId = 3083020440
 	pos = -0.212132081,14.5625,0.212132022
@@ -1750,13 +1974,13 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = Andromeda.FuelSphere.1_4293661368
-	sym = Andromeda.FuelSphere.1_4293660920
-	sym = Andromeda.FuelSphere.1_4293660888
-	sym = Andromeda.FuelSphere.1_4293660856
-	sym = Andromeda.FuelSphere.1_4293660824
-	sym = Andromeda.FuelSphere.1_4293660792
-	sym = Andromeda.FuelSphere.1_4293660760
+	sym = andromeda.sphere.fuel.tank.srf.1_4293661368
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660920
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660888
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660856
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660824
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660792
+	sym = andromeda.sphere.fuel.tank.srf.1_4293660760
 	srfN = srfAttach,dalim.adapter.s0p5.s0.1_4293868664,collider,0|0|0,0|0|-1,0|0|0
 	EVENTS
 	{
@@ -1789,6 +2013,38 @@ PART
 		beingAttached = False
 		beingSettled = False
 		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_colour
+		currentSubtype = c_white
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
 		stagingEnabled = True
 		EVENTS
 		{

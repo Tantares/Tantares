@@ -1,8 +1,8 @@
 ship = [Energia-M]
-version = 1.11.1
+version = 1.12.2
 description = 
 type = VAB
-size = 11.5639076,29.2926865,5
+size = 11.5639076,29.2926826,5
 steamPublishedFileId = 0
 persistentId = 3457404313
 rot = 0,0,0,0
@@ -16,7 +16,7 @@ PART
 {
 	part = rotanev.lv.fairing.s4.1_4293611196
 	partName = Part
-	persistentId = 969302839
+	persistentId = 2219222017
 	pos = 1.54415607,18.2503357,0.0748084784
 	attPos = 0,0,0
 	attPos0 = 0,-0.600000381,0
@@ -31,7 +31,7 @@ PART
 	resPri = 0
 	dstg = 3
 	sidx = 0
-	sqor = 1
+	sqor = 0
 	sepI = -1
 	attm = 0
 	sameVesselCollision = False
@@ -215,7 +215,7 @@ PART
 {
 	part = rotanev.lv.fuel.tank.s4.3_4293498006
 	partName = Part
-	persistentId = 2107207780
+	persistentId = 3069954906
 	pos = 1.54415607,11.7503347,0.0748084784
 	attPos = 0,0,0
 	attPos0 = 1.54415607,11.7503347,0.0748084784
@@ -294,7 +294,7 @@ PART
 {
 	part = rotanev.lv.engine.mount.s4.1_4293494748
 	partName = Part
-	persistentId = 1487229087
+	persistentId = 4148802467
 	pos = 1.54415607,4.93783474,0.0748084784
 	attPos = 0,0,0
 	attPos0 = 0,-6.8125,0
@@ -370,7 +370,7 @@ PART
 {
 	part = tantares.lv.engine.rd.0122.s0.1_4293493170
 	partName = Part
-	persistentId = 103054073
+	persistentId = 139454101
 	pos = 1.54415607,2.62533474,0.0748084784
 	attPos = 0,0,0
 	attPos0 = 0,-2.3125,0
@@ -385,7 +385,7 @@ PART
 	resPri = 0
 	dstg = 4
 	sidx = 1
-	sqor = 4
+	sqor = 2
 	sepI = -1
 	attm = 0
 	sameVesselCollision = False
@@ -640,12 +640,27 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = radialDecoupler1-2_4293489224
 	partName = Part
-	persistentId = 4232561895
+	persistentId = 2682501323
 	pos = -0.924937963,8.53421783,0.0748086274
 	attPos = 0,0,0
 	attPos0 = -2.46909404,-3.21611691,1.49011612E-07
@@ -660,7 +675,7 @@ PART
 	resPri = 0
 	dstg = 5
 	sidx = 0
-	sqor = 2
+	sqor = 1
 	sepI = 1
 	attm = 1
 	sameVesselCollision = False
@@ -785,7 +800,7 @@ PART
 {
 	part = hydra.lv.fuel.tank.s2.4_4293485974
 	partName = Part
-	persistentId = 3127185760
+	persistentId = 2889591424
 	pos = -2.33954477,7.74436855,0.0748084188
 	attPos = 0,0,0
 	attPos0 = -1.41460681,-0.789849281,-2.12341547E-07
@@ -865,7 +880,7 @@ PART
 {
 	part = hydra.lv.fuel.tank.s2.4_4293485144
 	partName = Part
-	persistentId = 4016369722
+	persistentId = 3041452566
 	pos = -2.33954477,15.7443686,0.0748084188
 	attPos = 0,0,0
 	attPos0 = 0,8,0
@@ -943,7 +958,7 @@ PART
 {
 	part = hydra.lv.fuel.tank.s2.2_4293480542
 	partName = Part
-	persistentId = 1818009664
+	persistentId = 948412386
 	pos = -2.33954477,20.7443695,0.0748084188
 	attPos = 0,0,0
 	attPos0 = 0,5,0
@@ -1020,7 +1035,7 @@ PART
 {
 	part = hydra.lv.nose.fuel.tank.s2.2_4293479702
 	partName = Part
-	persistentId = 1294640746
+	persistentId = 1788852703
 	pos = -2.33954477,23.6193695,0.0748084188
 	attPos = 0,0,0
 	attPos0 = 0,2.875,0
@@ -1097,7 +1112,7 @@ PART
 {
 	part = radialDecoupler1-2_4293476244
 	partName = Part
-	persistentId = 1891786321
+	persistentId = 3706741231
 	pos = 4.01324987,8.53421783,0.0748081133
 	attPos = 0,0,0
 	attPos0 = 2.46909404,-3.21611691,-3.65078449E-07
@@ -1112,7 +1127,7 @@ PART
 	resPri = 0
 	dstg = 5
 	sidx = 0
-	sqor = 2
+	sqor = 1
 	sepI = 1
 	attm = 1
 	sameVesselCollision = False
@@ -1237,7 +1252,7 @@ PART
 {
 	part = hydra.lv.fuel.tank.s2.4_4293476170
 	partName = Part
-	persistentId = 1291568440
+	persistentId = 1816171925
 	pos = 5.42785692,7.74436855,0.0748082027
 	attPos = 0,0,0
 	attPos0 = -1.41460681,-0.789849281,-2.12341547E-07
@@ -1317,7 +1332,7 @@ PART
 {
 	part = hydra.lv.fuel.tank.s2.4_4293476104
 	partName = Part
-	persistentId = 464229225
+	persistentId = 2295389196
 	pos = 5.42785692,15.7443686,0.0748082027
 	attPos = 0,0,0
 	attPos0 = 0,8,0
@@ -1395,7 +1410,7 @@ PART
 {
 	part = hydra.lv.fuel.tank.s2.2_4293476032
 	partName = Part
-	persistentId = 3101458917
+	persistentId = 2669331065
 	pos = 5.42785692,20.7443695,0.0748082027
 	attPos = 0,0,0
 	attPos0 = 0,5,0
@@ -1472,7 +1487,7 @@ PART
 {
 	part = hydra.lv.nose.fuel.tank.s2.2_4293475966
 	partName = Part
-	persistentId = 2369010050
+	persistentId = 3092276830
 	pos = 5.42785692,23.6193695,0.0748082027
 	attPos = 0,0,0
 	attPos0 = 0,2.875,0
@@ -1549,8 +1564,8 @@ PART
 {
 	part = sepMotor1_4293468564
 	partName = Part
-	persistentId = 15999352
-	pos = -3.27854586,23.2178879,0.0748082995
+	persistentId = 1306790631
+	pos = -3.27854538,23.2178879,0.0748082995
 	attPos = 0,0,0
 	attPos0 = 7.0959473E-08,-0.401481628,-0.939001322
 	rot = 0.661341906,-0.250253469,-0.661342025,-0.250253469
@@ -1564,7 +1579,7 @@ PART
 	resPri = 0
 	dstg = 6
 	sidx = 1
-	sqor = 2
+	sqor = 1
 	sepI = 1
 	attm = 1
 	sameVesselCollision = False
@@ -1599,7 +1614,7 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleEnginesFX
+		name = ModuleEngines
 		isEnabled = True
 		independentThrottle = False
 		independentThrottlePercentage = 0
@@ -1716,7 +1731,7 @@ PART
 {
 	part = sepMotor1_4293468390
 	partName = Part
-	persistentId = 3805861675
+	persistentId = 1154521648
 	pos = 6.36685848,23.2178879,0.0748082399
 	attPos = 0,0,0
 	attPos0 = 5.32009814E-08,-0.401481628,-0.939001322
@@ -1731,7 +1746,7 @@ PART
 	resPri = 0
 	dstg = 6
 	sidx = 1
-	sqor = 2
+	sqor = 1
 	sepI = 1
 	attm = 1
 	sameVesselCollision = False
@@ -1766,7 +1781,7 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleEnginesFX
+		name = ModuleEngines
 		isEnabled = True
 		independentThrottle = False
 		independentThrottlePercentage = 0
@@ -1813,6 +1828,10 @@ PART
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 				axisSpeedMultiplier = 0
 				axisInverted = None
+				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 			}
 			thrustPercentage
 			{
@@ -1820,6 +1839,10 @@ PART
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 				axisSpeedMultiplier = 0
 				axisInverted = None
+				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 			}
 		}
 		UPGRADESAPPLIED
@@ -1875,7 +1898,7 @@ PART
 {
 	part = hydra.lv.recovery.bay.srf.1_4293466892
 	partName = Part
-	persistentId = 1233409655
+	persistentId = 4083899209
 	pos = -3.57091045,19.4984818,0.0748081803
 	attPos = 0,0,0
 	attPos0 = 1.6430603E-07,3.75411415,-1.23136604
@@ -1968,8 +1991,8 @@ PART
 {
 	part = hydra.lv.recovery.bay.srf.1_4293466070
 	partName = Part
-	persistentId = 279813498
-	pos = 6.65922308,19.4984818,0.0748083368
+	persistentId = 1689946474
+	pos = 6.65922356,19.4984818,0.0748083368
 	attPos = 0,0,0
 	attPos0 = 2.20535554E-07,3.75411415,-1.23136556
 	rot = 0,0.707106709,0,-0.707106948
@@ -2057,7 +2080,7 @@ PART
 {
 	part = hydra.lv.recovery.bay.srf.2_4293465560
 	partName = Part
-	persistentId = 1849175347
+	persistentId = 2099410914
 	pos = -3.57529736,7.23991776,0.0748080611
 	attPos = 0,0,0
 	attPos0 = 8.94069601E-08,-0.504450798,-1.23575318
@@ -2150,8 +2173,8 @@ PART
 {
 	part = hydra.lv.recovery.bay.srf.2_4293464812
 	partName = Part
-	persistentId = 2217515342
-	pos = 6.66360998,7.23991776,0.074808456
+	persistentId = 2370336368
+	pos = 6.66361046,7.23991776,0.074808456
 	attPos = 0,0,0
 	attPos0 = 1.19943081E-07,-0.504450798,-1.2357527
 	rot = 0,0.707106829,0,-0.707106829
@@ -2239,7 +2262,7 @@ PART
 {
 	part = tantares.lv.engine.rd.170.s0.1_4293484518
 	partName = Part
-	persistentId = 453981142
+	persistentId = 1952155065
 	pos = -2.33954477,2.49436855,0.0748084188
 	attPos = 0,0,0
 	attPos0 = 0,-5.25,0
@@ -2254,7 +2277,7 @@ PART
 	resPri = 0
 	dstg = 6
 	sidx = 0
-	sqor = 4
+	sqor = 2
 	sepI = 1
 	attm = 0
 	sameVesselCollision = False
@@ -2510,12 +2533,27 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = tantares.lv.engine.rd.170.s0.1_4293463960
 	partName = Part
-	persistentId = 2906455805
+	persistentId = 2765093456
 	pos = 5.42785692,2.49436855,0.0748082027
 	attPos = 0,0,0
 	attPos0 = 7.34274974E-10,-5.25,-1.11022329E-16
@@ -2530,7 +2568,7 @@ PART
 	resPri = 0
 	dstg = 6
 	sidx = 0
-	sqor = 4
+	sqor = 2
 	sepI = 1
 	attm = 0
 	sameVesselCollision = False
@@ -2768,6 +2806,21 @@ PART
 		useVariantMass = True
 		stagingEnabled = True
 		selectedVariant = variant2
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		isEnabled = True
+		stagingEnabled = True
 		EVENTS
 		{
 		}

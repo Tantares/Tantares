@@ -1,10 +1,10 @@
 ship = [LK-700] Lunar Lander
-version = 1.11.1
+version = 1.12.2
 description = 
 type = VAB
-size = 2.37949777,9.28750038,2.29194736
+size = 2.37949848,9.28750229,2.29194713
 steamPublishedFileId = 0
-persistentId = 1645449182
+persistentId = 584100712
 rot = 0,0,0,0
 missionFlag = Squad/Flags/default
 vesselType = Debris
@@ -14,31 +14,359 @@ OverrideAxisControl = 0,0,0,0
 OverrideGroupNames = ,,,
 PART
 {
-	part = aquarius.crew.s1p5.1_4294408424
+	part = aquarius.parachute.s0p5.1_4294399110
 	partName = Part
-	persistentId = 3826472097
-	pos = 0,15,0
+	persistentId = 3657774547
+	pos = 0.00179613288,15.7360058,0.00766220875
 	attPos = 0,0,0
-	attPos0 = 0,15,0
+	attPos0 = 0.00179613288,15.7360058,0.00766220875
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	autostrutMode = Heaviest
+	autostrutMode = Off
 	rigidAttachment = False
-	istg = -1
+	istg = 0
 	resPri = 0
 	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
+	sidx = 0
+	sqor = 0
+	sepI = 0
 	attm = 0
 	sameVesselCollision = False
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = aquarius.parachute.s0p5.1_4294399110
+	link = aquarius.drogue.parachute.s0.1_4294398346
+	link = aquarius.crew.s1p5.1_4292769336
+	attN = bottom,aquarius.crew.s1p5.1_4292769336_0|-0.125|0_0|-1|0_0|-0.125|0_0|-1|0
+	attN = top,aquarius.drogue.parachute.s0.1_4294398346_0|0.125|0_0|1|0_0|0.125|0_0|1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleParachute
+		isEnabled = True
+		persistentState = STOWED
+		animTime = 0
+		minAirPressureToOpen = 0.0399999991
+		deployAltitude = 1000
+		spreadAngle = 7
+		automateSafeDeploy = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			CutAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = aquarius.drogue.parachute.s0.1_4294398346
+	partName = Part
+	persistentId = 2540989488
+	pos = 0.00179613288,16.0360069,0.00766220875
+	attPos = 0,0,0
+	attPos0 = 0,0.300000191,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 2
+	sidx = 0
+	sqor = 1
+	sepI = 1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = bottom,aquarius.parachute.s0p5.1_4294399110_0|-0.174999997|0_0|-1|0_0|-0.174999997|0_0|-1|0
+	attN = top,Null_0_0|0.174999997|0_0|1|0_0|0.174999997|0_0|1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleParachute
+		isEnabled = True
+		persistentState = STOWED
+		animTime = 0
+		minAirPressureToOpen = 0.0199999996
+		deployAltitude = 2500
+		spreadAngle = 7
+		automateSafeDeploy = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			CutAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		activejettisonName = fairing1
+		isJettisoned = True
+		shroudHideOverride = False
+		stagingEnabled = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = aquarius.crew.s1p5.1_4292769336
+	partName = Part
+	persistentId = 2847808483
+	pos = 0.00179613288,15.2360058,0.00766220875
+	attPos = 0,0,0
+	attPos0 = 0,-0.5,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
 	link = aquarius.heatshield.s1p5.1_4294376914
 	attN = bottom,aquarius.heatshield.s1p5.1_4294376914_0|-0.375|0_0|-1|0_0|-0.375|0_0|-1|0
 	attN = top,aquarius.parachute.s0p5.1_4294399110_0|0.375|0_0|1|0_0|0.375|0_0|1|0
@@ -292,8 +620,8 @@ PART
 	RESOURCE
 	{
 		name = ElectricCharge
-		amount = 100
-		maxAmount = 100
+		amount = 15
+		maxAmount = 15
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -322,367 +650,28 @@ PART
 		isVisible = True
 		flowMode = Both
 	}
-	RESOURCE
-	{
-		name = MonoPropellant
-		amount = 30
-		maxAmount = 30
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = aquarius.parachute.s0p5.1_4294399110
-	partName = Part
-	persistentId = 633791215
-	pos = 0,15.5,0
-	attPos = 0,0,0
-	attPos0 = 0,0.5,0
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 0
-	resPri = 0
-	dstg = 1
-	sidx = 0
-	sqor = 0
-	sepI = 0
-	attm = 0
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	link = aquarius.drogue.parachute.s0.1_4294398346
-	attN = bottom,aquarius.crew.s1p5.1_4294408424_0|-0.125|0_0|-1|0_0|-0.125|0_0|-1|0
-	attN = top,aquarius.drogue.parachute.s0.1_4294398346_0|0.125|0_0|1|0_0|0.125|0_0|1|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleParachute
-		isEnabled = True
-		persistentState = STOWED
-		animTime = 0
-		minAirPressureToOpen = 0.0399999991
-		deployAltitude = 1000
-		spreadAngle = 7
-		automateSafeDeploy = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			DeployAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			CutAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDecouple
-		isEnabled = True
-		ejectionForcePercent = 100
-		isDecoupled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			DecoupleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDragModifier
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDragModifier
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModulePartVariants
-		isEnabled = True
-		useVariantMass = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = aquarius.drogue.parachute.s0.1_4294398346
-	partName = Part
-	persistentId = 1331807338
-	pos = 0,15.8000002,0
-	attPos = 0,0,0
-	attPos0 = 0,0.300000191,0
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 1
-	resPri = 0
-	dstg = 3
-	sidx = 0
-	sqor = 1
-	sepI = 1
-	attm = 0
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	attN = bottom,aquarius.parachute.s0p5.1_4294399110_0|-0.174999997|0_0|-1|0_0|-0.174999997|0_0|-1|0
-	attN = top,Null_0_0|0.174999997|0_0|1|0_0|0.174999997|0_0|1|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleParachute
-		isEnabled = True
-		persistentState = STOWED
-		animTime = 0
-		minAirPressureToOpen = 0.0199999996
-		deployAltitude = 2500
-		spreadAngle = 7
-		automateSafeDeploy = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			DeployAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			CutAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDecouple
-		isEnabled = True
-		ejectionForcePercent = 100
-		isDecoupled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			DecoupleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleJettison
-		isEnabled = True
-		activejettisonName = fairing1
-		isJettisoned = True
-		shroudHideOverride = False
-		stagingEnabled = False
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			JettisonAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDragModifier
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDragModifier
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModulePartVariants
-		isEnabled = True
-		useVariantMass = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = aquarius.heatshield.s1p5.1_4294376914
 	partName = Part
-	persistentId = 694157116
-	pos = 0,14.5,0
+	persistentId = 955202052
+	pos = 0.00179613288,14.7360058,0.00766220875
 	attPos = 0,0,0
 	attPos0 = 0,-0.5,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
-	symMethod = Radial
+	symMethod = Mirror
 	autostrutMode = Heaviest
 	rigidAttachment = False
-	istg = -1
+	istg = 0
 	resPri = 0
-	dstg = 1
+	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = -1
+	sepI = 0
 	attm = 0
 	sameVesselCollision = False
 	modCost = 0
@@ -690,7 +679,7 @@ PART
 	modSize = 0,0,0
 	link = castor.decoupler.s1p5.1_4294368550
 	attN = bottom,castor.decoupler.s1p5.1_4294368550_0|-0.125|0_0|-1|0_0|-0.125|0_0|-1|0
-	attN = top,aquarius.crew.s1p5.1_4294408424_0|0.125|0_0|1|0_0|0.125|0_0|1|0
+	attN = top,aquarius.crew.s1p5.1_4292769336_0|0.125|0_0|1|0_0|0.125|0_0|1|0
 	EVENTS
 	{
 	}
@@ -808,8 +797,8 @@ PART
 {
 	part = castor.decoupler.s1p5.1_4294368550
 	partName = Part
-	persistentId = 1251169995
-	pos = 0,14.3125,0
+	persistentId = 938131714
+	pos = 0.00179613288,14.5485058,0.00766220875
 	attPos = 0,0,0
 	attPos0 = 0,-0.1875,0
 	rot = 0,0,0,1
@@ -821,7 +810,7 @@ PART
 	rigidAttachment = False
 	istg = 2
 	resPri = 0
-	dstg = 3
+	dstg = 4
 	sidx = 0
 	sqor = 2
 	sepI = 2
@@ -931,8 +920,8 @@ PART
 {
 	part = aquarius.service.module.s1p5.2_4294349054
 	partName = Part
-	persistentId = 3991359459
-	pos = 0,13.5,0
+	persistentId = 2438786793
+	pos = 0.00179613288,13.7360058,0.00766220875
 	attPos = 0,0,0
 	attPos0 = 0,-0.8125,0
 	rot = 0,0,0,1
@@ -944,7 +933,7 @@ PART
 	rigidAttachment = False
 	istg = 2
 	resPri = 0
-	dstg = 4
+	dstg = 5
 	sidx = -1
 	sqor = -1
 	sepI = 2
@@ -953,15 +942,15 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = aquarius.engine.mount.s1p5.1_4294316058
-	link = Andromeda.MonoSphere.1_4294236820
-	link = Andromeda.FuelSphere.1_4294237718
-	link = Andromeda.FuelSphere.1_4294236190
-	link = Andromeda.MonoSphere.1_4294235194
+	link = andromeda.sphere.fuel.tank.srf.1_4294236820
+	link = andromeda.sphere.fuel.tank.srf.1_4294237718
+	link = andromeda.sphere.fuel.tank.srf.1_4294236190
+	link = andromeda.sphere.fuel.tank.srf.1_4294235194
 	link = octans.rcs.srf.4_4293547902
 	link = octans.rcs.srf.4_4293547466
 	link = octans.rcs.srf.4_4293547404
 	link = octans.rcs.srf.4_4293547342
+	link = aquarius.engine.mount.s1p5.1_4294316058
 	attN = top,castor.decoupler.s1p5.1_4294368550_0|0.75|0_0|1|0_0|0.75|0_0|1|0
 	attN = bottom,aquarius.engine.mount.s1p5.1_4294316058_0|-0.75|0_0|-1|0_0|-0.75|0_0|-1|0
 	EVENTS
@@ -1029,22 +1018,1024 @@ PART
 }
 PART
 {
+	part = andromeda.sphere.fuel.tank.srf.1_4294236820
+	partName = Part
+	persistentId = 125588681
+	pos = 0.94012779,13.0744257,0.00766226463
+	attPos = 0,0,0
+	attPos0 = 0.938331664,-0.661580086,5.5928929E-08
+	rot = -0.5,0.5,-0.5,-0.5
+	attRot = 0.707106769,0,0,0.707106769
+	attRot0 = -0.5,0.5,-0.5,-0.5
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 5
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,aquarius.service.module.s1p5.2_4294349054,collider,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_colour
+		currentSubtype = c_white
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 6.75
+		maxAmount = 6.75
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 8.25
+		maxAmount = 8.25
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = MonoPropellant
+		amount = 10
+		maxAmount = 10
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = andromeda.sphere.fuel.tank.srf.1_4294237718
+	partName = Part
+	persistentId = 609363282
+	pos = -0.911091626,13.0656128,0.252269745
+	attPos = 0,0,0
+	attPos0 = -0.912887752,-0.67039299,0.244607538
+	rot = 0.430459321,0.560985565,-0.560985565,0.430459321
+	attRot = 0.707106769,0,0,0.707106769
+	attRot0 = 0.430459321,0.560985565,-0.560985565,0.430459321
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 5
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,aquarius.service.module.s1p5.2_4294349054,collider,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_colour
+		currentSubtype = c_white
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 4.5
+		maxAmount = 4.5
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 5.5
+		maxAmount = 5.5
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = andromeda.sphere.fuel.tank.srf.1_4294236190
+	partName = Part
+	persistentId = 263619131
+	pos = -0.936558187,13.0702553,0.00766226463
+	attPos = 0,0,0
+	attPos0 = -0.938354313,-0.665750504,5.59302791E-08
+	rot = 0.5,0.5,-0.5,0.5
+	attRot = 0.707106769,0,0,0.707106769
+	attRot0 = 0.5,0.5,-0.5,0.5
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 5
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,aquarius.service.module.s1p5.2_4294349054,collider,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_colour
+		currentSubtype = c_white
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 4.5
+		maxAmount = 4.5
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 5.5
+		maxAmount = 5.5
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = andromeda.sphere.fuel.tank.srf.1_4294235194
+	partName = Part
+	persistentId = 1957300317
+	pos = 0.91014719,13.0726185,-0.235729665
+	attPos = 0,0,0
+	attPos0 = 0.908351064,-0.663387299,-0.243391871
+	rot = -0.560985565,0.430459321,-0.430459321,-0.560985565
+	attRot = 0.707106769,0,0,0.707106769
+	attRot0 = -0.560985565,0.430459321,-0.430459321,-0.560985565
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 5
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,aquarius.service.module.s1p5.2_4294349054,collider,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_colour
+		currentSubtype = c_white
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 6.75
+		maxAmount = 6.75
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 8.25
+		maxAmount = 8.25
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = MonoPropellant
+		amount = 10
+		maxAmount = 10
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = octans.rcs.srf.4_4293547902
+	partName = Part
+	persistentId = 1715559803
+	pos = -0.935723782,14.1514997,0.00766226463
+	attPos = 0,0,0
+	attPos0 = -0.937519908,0.415493965,5.58805446E-08
+	rot = 0,0.707106829,0,0.707106829
+	attRot = 0,0,0,1
+	attRot0 = 0,0.707106829,0,0.707106829
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 5
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = octans.rcs.srf.4_4293547466
+	sym = octans.rcs.srf.4_4293547404
+	sym = octans.rcs.srf.4_4293547342
+	srfN = srfAttach,aquarius.service.module.s1p5.2_4294349054,collider,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleRCSFX
+		isEnabled = True
+		rcsEnabled = True
+		thrustPercentage = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
+		useThrottle = False
+		fullThrust = True
+		stagingEnabled = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		selectedVariant = tantares_white
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = octans.rcs.srf.4_4293547466
+	partName = Part
+	persistentId = 2958028786
+	pos = 0.00179613288,14.1514997,0.945182085
+	attPos = 0,0,0
+	attPos0 = 2.21973666E-16,0.415493965,0.937519848
+	rot = 0,1,0,0
+	attRot = 0,0,0,1
+	attRot0 = 0,1,0,0
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 5
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = octans.rcs.srf.4_4293547404
+	sym = octans.rcs.srf.4_4293547342
+	sym = octans.rcs.srf.4_4293547902
+	srfN = srfAttach,aquarius.service.module.s1p5.2_4294349054,collider,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleRCSFX
+		isEnabled = True
+		rcsEnabled = True
+		thrustPercentage = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
+		useThrottle = False
+		fullThrust = True
+		stagingEnabled = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		selectedVariant = tantares_white
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = octans.rcs.srf.4_4293547404
+	partName = Part
+	persistentId = 2467819221
+	pos = 0.939316034,14.1514997,0.00766207092
+	attPos = 0,0,0
+	attPos0 = 0.937519908,0.415493965,-1.37841141E-07
+	rot = 0,0.707106769,0,-0.707106888
+	attRot = 0,0,0,1
+	attRot0 = 0,0.707106769,0,-0.707106888
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 5
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = octans.rcs.srf.4_4293547342
+	sym = octans.rcs.srf.4_4293547902
+	sym = octans.rcs.srf.4_4293547466
+	srfN = srfAttach,aquarius.service.module.s1p5.2_4294349054,collider,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleRCSFX
+		isEnabled = True
+		rcsEnabled = True
+		thrustPercentage = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
+		useThrottle = False
+		fullThrust = True
+		stagingEnabled = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		selectedVariant = tantares_white
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = octans.rcs.srf.4_4293547342
+	partName = Part
+	persistentId = 772500911
+	pos = 0.00179602113,14.1514997,-0.929857612
+	attPos = 0,0,0
+	attPos0 = -1.11761082E-07,0.415493965,-0.937519848
+	rot = 0,0,0,-1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,-1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 5
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = octans.rcs.srf.4_4293547902
+	sym = octans.rcs.srf.4_4293547466
+	sym = octans.rcs.srf.4_4293547404
+	srfN = srfAttach,aquarius.service.module.s1p5.2_4294349054,collider,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleRCSFX
+		isEnabled = True
+		rcsEnabled = True
+		thrustPercentage = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
+		useThrottle = False
+		fullThrust = True
+		stagingEnabled = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		selectedVariant = tantares_white
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
 	part = aquarius.engine.mount.s1p5.1_4294316058
 	partName = Part
-	persistentId = 615648357
-	pos = 0,12.6875,0
+	persistentId = 4114883623
+	pos = 0.00179613288,12.9235058,0.00766220875
 	attPos = 0,0,0
 	attPos0 = 0,-0.8125,0
 	rot = 0,0,-1,0
 	attRot = 0,0,-0.99999994,0
 	attRot0 = 0,0,-1,0
 	mir = 1,1,1
-	symMethod = Radial
+	symMethod = Mirror
 	autostrutMode = Heaviest
 	rigidAttachment = False
 	istg = 2
 	resPri = 0
-	dstg = 4
+	dstg = 5
 	sidx = -1
 	sqor = -1
 	sepI = 2
@@ -1056,8 +2047,8 @@ PART
 	link = castor.aerospike.engine.s0.1_4294308014
 	link = castor.decoupler.s1p5.1_4294304722
 	link = vela.high.gain.antenna.srf.1_4294290136
-	link = Hamal.Battery.2_4294219506
-	link = Hamal.Battery.2_4294219290
+	link = hamal.battery.srf.2_4294219506
+	link = hamal.battery.srf.2_4294219290
 	attN = bottom,aquarius.service.module.s1p5.2_4294349054_0|-0.0625|0_0|-1|0_0|-0.0625|0_0|-1|0
 	attN = top,castor.aerospike.engine.s0.1_4294308014_0|0.0625|0_0|1|0_0|0.0625|0_0|1|0
 	attN = interstage,castor.decoupler.s1p5.1_4294304722_0|0.5625|0_0|1|0_0|0.5625|0_0|1|0
@@ -1129,8 +2120,8 @@ PART
 {
 	part = castor.aerospike.engine.s0.1_4294308014
 	partName = Part
-	persistentId = 145791891
-	pos = 0,12.5,0
+	persistentId = 388504408
+	pos = 0.00179613288,12.7360058,0.00766220875
 	attPos = 0,0,0
 	attPos0 = 0,0.1875,0
 	rot = 0,0,0,1
@@ -1142,7 +2133,7 @@ PART
 	rigidAttachment = False
 	istg = 4
 	resPri = 0
-	dstg = 4
+	dstg = 5
 	sidx = 0
 	sqor = 4
 	sepI = 2
@@ -1313,8 +2304,8 @@ PART
 {
 	part = castor.decoupler.s1p5.1_4294304722
 	partName = Part
-	persistentId = 840343219
-	pos = 0,12.0625,0
+	persistentId = 4123402822
+	pos = 0.00179613288,12.2985058,0.00766220875
 	attPos = 0,0,0
 	attPos0 = 0,0.625,0
 	rot = 0,0,0,1
@@ -1326,7 +2317,7 @@ PART
 	rigidAttachment = False
 	istg = 3
 	resPri = 0
-	dstg = 5
+	dstg = 6
 	sidx = 0
 	sqor = 3
 	sepI = 3
@@ -1434,1143 +2425,10 @@ PART
 }
 PART
 {
-	part = vela.high.gain.antenna.srf.1_4294290136
-	partName = Part
-	persistentId = 805262911
-	pos = -7.95612252E-08,12.6718206,-0.910074294
-	attPos = 0,0,0
-	attPos0 = 7.95612252E-08,0.0156793594,-0.910074294
-	rot = 0,0,1,0
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,-1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 2
-	resPri = 0
-	dstg = 4
-	sidx = -1
-	sqor = -1
-	sepI = 2
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	srfN = srfAttach,aquarius.engine.mount.s1p5.1_4294316058,collider,0|0|0,0|0|-1,0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDataTransmitter
-		isEnabled = True
-		xmitIncomplete = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			StartTransmissionAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModulePartVariants
-		isEnabled = True
-		useVariantMass = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = Andromeda.MonoSphere.1_4294236820
-	partName = Part
-	persistentId = 2264863526
-	pos = 0.938331664,12.8384199,5.5928929E-08
-	attPos = 0,0,0
-	attPos0 = 0.938331664,-0.661580086,5.5928929E-08
-	rot = -0.5,0.5,-0.5,-0.5
-	attRot = 0.707106769,0,0,0.707106769
-	attRot0 = -0.5,0.5,-0.5,-0.5
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 2
-	resPri = 0
-	dstg = 4
-	sidx = -1
-	sqor = -1
-	sepI = 2
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	srfN = srfAttach,aquarius.service.module.s1p5.2_4294349054,collider,0|0|0,0|0|-1,0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = MonoPropellant
-		amount = 10
-		maxAmount = 10
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = Andromeda.FuelSphere.1_4294237718
-	partName = Part
-	persistentId = 2929006980
-	pos = -0.912887752,12.829607,0.244607538
-	attPos = 0,0,0
-	attPos0 = -0.912887752,-0.67039299,0.244607538
-	rot = 0.430459321,0.560985565,-0.560985565,0.430459321
-	attRot = 0.707106769,0,0,0.707106769
-	attRot0 = 0.430459321,0.560985565,-0.560985565,0.430459321
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 2
-	resPri = 0
-	dstg = 4
-	sidx = -1
-	sqor = -1
-	sepI = 2
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	srfN = srfAttach,aquarius.service.module.s1p5.2_4294349054,collider,0|0|0,0|0|-1,0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = LiquidFuel
-		amount = 4.5
-		maxAmount = 4.5
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = Oxidizer
-		amount = 5.5
-		maxAmount = 5.5
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = Andromeda.FuelSphere.1_4294236190
-	partName = Part
-	persistentId = 2178018072
-	pos = -0.938354313,12.8342495,5.59302791E-08
-	attPos = 0,0,0
-	attPos0 = -0.938354313,-0.665750504,5.59302791E-08
-	rot = 0.5,0.5,-0.5,0.5
-	attRot = 0.707106769,0,0,0.707106769
-	attRot0 = 0.5,0.5,-0.5,0.5
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 2
-	resPri = 0
-	dstg = 4
-	sidx = -1
-	sqor = -1
-	sepI = 2
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	srfN = srfAttach,aquarius.service.module.s1p5.2_4294349054,collider,0|0|0,0|0|-1,0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = LiquidFuel
-		amount = 4.5
-		maxAmount = 4.5
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = Oxidizer
-		amount = 5.5
-		maxAmount = 5.5
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = Andromeda.MonoSphere.1_4294235194
-	partName = Part
-	persistentId = 1722815396
-	pos = 0.908351064,12.8366127,-0.243391871
-	attPos = 0,0,0
-	attPos0 = 0.908351064,-0.663387299,-0.243391871
-	rot = -0.560985565,0.430459321,-0.430459321,-0.560985565
-	attRot = 0.707106769,0,0,0.707106769
-	attRot0 = -0.560985565,0.430459321,-0.430459321,-0.560985565
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 2
-	resPri = 0
-	dstg = 4
-	sidx = -1
-	sqor = -1
-	sepI = 2
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	srfN = srfAttach,aquarius.service.module.s1p5.2_4294349054,collider,0|0|0,0|0|-1,0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = MonoPropellant
-		amount = 10
-		maxAmount = 10
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = Hamal.Battery.2_4294219506
-	partName = Part
-	persistentId = 1733970109
-	pos = 0,12.8805008,0.487635702
-	attPos = 0,-0.255500793,0
-	attPos0 = 0,0.0625,0.487635702
-	rot = 0,0.707106829,0.707106829,0
-	attRot = 0,0,0,1
-	attRot0 = -0.707106829,0,0,-0.707106829
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 2
-	resPri = 0
-	dstg = 4
-	sidx = -1
-	sqor = -1
-	sepI = 2
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = Hamal.Battery.2_4294219290
-	srfN = srfAttach,aquarius.engine.mount.s1p5.1_4294316058,collider,0|0|0,0|0|-1,0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModulePartVariants
-		isEnabled = True
-		useVariantMass = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = ElectricCharge
-		amount = 200
-		maxAmount = 200
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = Hamal.Battery.2_4294219290
-	partName = Part
-	persistentId = 1331673065
-	pos = 4.2630468E-08,12.8805008,-0.487635702
-	attPos = 0,-0.255500793,0
-	attPos0 = -4.2630468E-08,0.0625,-0.487635702
-	rot = -0.707106829,-3.09086197E-08,-3.09086197E-08,0.707106829
-	attRot = 0,0,0,1
-	attRot0 = 3.09086197E-08,-0.707106829,0.707106829,3.09086197E-08
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 2
-	resPri = 0
-	dstg = 4
-	sidx = -1
-	sqor = -1
-	sepI = 2
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = Hamal.Battery.2_4294219506
-	srfN = srfAttach,aquarius.engine.mount.s1p5.1_4294316058,collider,0|0|0,0|0|-1,0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModulePartVariants
-		isEnabled = True
-		useVariantMass = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = ElectricCharge
-		amount = 200
-		maxAmount = 200
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = octans.rcs.srf.4_4293547902
-	partName = Part
-	persistentId = 2114425655
-	pos = -0.937519908,13.915494,5.58805446E-08
-	attPos = 0,0,0
-	attPos0 = -0.937519908,0.415493965,5.58805446E-08
-	rot = 0,0.707106829,0,0.707106829
-	attRot = 0,0,0,1
-	attRot0 = 0,0.707106829,0,0.707106829
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 2
-	resPri = 0
-	dstg = 4
-	sidx = -1
-	sqor = -1
-	sepI = 2
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = octans.rcs.srf.4_4293547466
-	sym = octans.rcs.srf.4_4293547404
-	sym = octans.rcs.srf.4_4293547342
-	srfN = srfAttach,aquarius.service.module.s1p5.2_4294349054,collider,0|0|0,0|0|-1,0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleRCSFX
-		isEnabled = True
-		rcsEnabled = True
-		thrustPercentage = 100
-		currentShowToggles = False
-		enableYaw = True
-		enablePitch = True
-		enableRoll = True
-		enableX = True
-		enableY = True
-		enableZ = True
-		useThrottle = False
-		fullThrust = True
-		stagingEnabled = False
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModulePartVariants
-		isEnabled = True
-		useVariantMass = True
-		stagingEnabled = True
-		selectedVariant = tantares_white
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = octans.rcs.srf.4_4293547466
-	partName = Part
-	persistentId = 2225476403
-	pos = 2.21973666E-16,13.915494,0.937519848
-	attPos = 0,0,0
-	attPos0 = 2.21973666E-16,0.415493965,0.937519848
-	rot = 0,1,0,0
-	attRot = 0,0,0,1
-	attRot0 = 0,1,0,0
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 2
-	resPri = 0
-	dstg = 4
-	sidx = -1
-	sqor = -1
-	sepI = 2
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = octans.rcs.srf.4_4293547404
-	sym = octans.rcs.srf.4_4293547342
-	sym = octans.rcs.srf.4_4293547902
-	srfN = srfAttach,aquarius.service.module.s1p5.2_4294349054,collider,0|0|0,0|0|-1,0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleRCSFX
-		isEnabled = True
-		rcsEnabled = True
-		thrustPercentage = 100
-		currentShowToggles = False
-		enableYaw = True
-		enablePitch = True
-		enableRoll = True
-		enableX = True
-		enableY = True
-		enableZ = True
-		useThrottle = False
-		fullThrust = True
-		stagingEnabled = False
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModulePartVariants
-		isEnabled = True
-		useVariantMass = True
-		stagingEnabled = True
-		selectedVariant = tantares_white
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = octans.rcs.srf.4_4293547404
-	partName = Part
-	persistentId = 349606383
-	pos = 0.937519908,13.915494,-1.37841141E-07
-	attPos = 0,0,0
-	attPos0 = 0.937519908,0.415493965,-1.37841141E-07
-	rot = 0,0.707106769,0,-0.707106888
-	attRot = 0,0,0,1
-	attRot0 = 0,0.707106769,0,-0.707106888
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 2
-	resPri = 0
-	dstg = 4
-	sidx = -1
-	sqor = -1
-	sepI = 2
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = octans.rcs.srf.4_4293547342
-	sym = octans.rcs.srf.4_4293547902
-	sym = octans.rcs.srf.4_4293547466
-	srfN = srfAttach,aquarius.service.module.s1p5.2_4294349054,collider,0|0|0,0|0|-1,0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleRCSFX
-		isEnabled = True
-		rcsEnabled = True
-		thrustPercentage = 100
-		currentShowToggles = False
-		enableYaw = True
-		enablePitch = True
-		enableRoll = True
-		enableX = True
-		enableY = True
-		enableZ = True
-		useThrottle = False
-		fullThrust = True
-		stagingEnabled = False
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModulePartVariants
-		isEnabled = True
-		useVariantMass = True
-		stagingEnabled = True
-		selectedVariant = tantares_white
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = octans.rcs.srf.4_4293547342
-	partName = Part
-	persistentId = 1915709
-	pos = -1.11761082E-07,13.915494,-0.937519848
-	attPos = 0,0,0
-	attPos0 = -1.11761082E-07,0.415493965,-0.937519848
-	rot = 0,0,0,-1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,-1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 2
-	resPri = 0
-	dstg = 4
-	sidx = -1
-	sqor = -1
-	sepI = 2
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = octans.rcs.srf.4_4293547902
-	sym = octans.rcs.srf.4_4293547466
-	sym = octans.rcs.srf.4_4293547404
-	srfN = srfAttach,aquarius.service.module.s1p5.2_4294349054,collider,0|0|0,0|0|-1,0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleRCSFX
-		isEnabled = True
-		rcsEnabled = True
-		thrustPercentage = 100
-		currentShowToggles = False
-		enableYaw = True
-		enablePitch = True
-		enableRoll = True
-		enableX = True
-		enableY = True
-		enableZ = True
-		useThrottle = False
-		fullThrust = True
-		stagingEnabled = False
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModulePartVariants
-		isEnabled = True
-		useVariantMass = True
-		stagingEnabled = True
-		selectedVariant = tantares_white
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
 	part = aquarius.fuselage.s1p5.1_4294303576
 	partName = Part
-	persistentId = 2371949363
-	pos = 0,11.625,0
+	persistentId = 1964644610
+	pos = 0.00179613288,11.8610058,0.00766220875
 	attPos = 0,0,0
 	attPos0 = 0,-0.4375,0
 	rot = 0,0,0,1
@@ -2582,7 +2440,7 @@ PART
 	rigidAttachment = False
 	istg = 3
 	resPri = 0
-	dstg = 6
+	dstg = 7
 	sidx = -1
 	sqor = -1
 	sepI = 3
@@ -2646,8 +2504,8 @@ PART
 {
 	part = vela.landing.leg.srf.1_4294297558
 	partName = Part
-	persistentId = 1319379740
-	pos = -0.938510239,11.6323786,5.5939573E-08
+	persistentId = 3931442056
+	pos = -0.936714113,11.8683844,0.00766226463
 	attPos = 0,0,0
 	attPos0 = -0.938510239,0.00737857819,5.5939573E-08
 	rot = 0,0.707106888,0,0.70710665
@@ -2659,7 +2517,7 @@ PART
 	rigidAttachment = False
 	istg = 3
 	resPri = 0
-	dstg = 6
+	dstg = 7
 	sidx = -1
 	sqor = -1
 	sepI = 3
@@ -2776,8 +2634,8 @@ PART
 {
 	part = vela.landing.leg.srf.1_4294297058
 	partName = Part
-	persistentId = 2429256929
-	pos = -0.46925506,11.6323786,0.812773705
+	persistentId = 4091567230
+	pos = -0.467458934,11.8683844,0.820435941
 	attPos = 0,0,0
 	attPos0 = -0.46925506,0.00737857819,0.812773705
 	rot = 0,0.965925872,0,0.258818895
@@ -2789,7 +2647,7 @@ PART
 	rigidAttachment = False
 	istg = 3
 	resPri = 0
-	dstg = 6
+	dstg = 7
 	sidx = -1
 	sqor = -1
 	sepI = 3
@@ -2902,8 +2760,8 @@ PART
 {
 	part = vela.landing.leg.srf.1_4294296988
 	partName = Part
-	persistentId = 1576911363
-	pos = 0.469255269,11.6323786,0.812773645
+	persistentId = 2148048355
+	pos = 0.471051395,11.8683844,0.820435882
 	attPos = 0,0,0
 	attPos0 = 0.469255269,0.00737857819,0.812773645
 	rot = 0,0.965925813,0,-0.258819282
@@ -2915,7 +2773,7 @@ PART
 	rigidAttachment = False
 	istg = 3
 	resPri = 0
-	dstg = 6
+	dstg = 7
 	sidx = -1
 	sqor = -1
 	sepI = 3
@@ -3028,8 +2886,8 @@ PART
 {
 	part = vela.landing.leg.srf.1_4294296918
 	partName = Part
-	persistentId = 2365459604
-	pos = 0.938510239,11.6323786,-1.37986746E-07
+	persistentId = 3903146980
+	pos = 0.940306365,11.8683844,0.00766207092
 	attPos = 0,0,0
 	attPos0 = 0.938510239,0.00737857819,-1.37986746E-07
 	rot = 0,0.70710659,0,-0.707106948
@@ -3041,7 +2899,7 @@ PART
 	rigidAttachment = False
 	istg = 3
 	resPri = 0
-	dstg = 6
+	dstg = 7
 	sidx = -1
 	sqor = -1
 	sepI = 3
@@ -3154,8 +3012,8 @@ PART
 {
 	part = vela.landing.leg.srf.1_4294296848
 	partName = Part
-	persistentId = 671353648
-	pos = 0.46925506,11.6323786,-0.812773824
+	persistentId = 1051325819
+	pos = 0.471051186,11.8683844,-0.805111587
 	attPos = 0,0,0
 	attPos0 = 0.46925506,0.00737857819,-0.812773824
 	rot = 0,0.258818835,0,-0.965925872
@@ -3167,7 +3025,7 @@ PART
 	rigidAttachment = False
 	istg = 3
 	resPri = 0
-	dstg = 6
+	dstg = 7
 	sidx = -1
 	sqor = -1
 	sepI = 3
@@ -3280,8 +3138,8 @@ PART
 {
 	part = vela.landing.leg.srf.1_4294296778
 	partName = Part
-	persistentId = 174428613
-	pos = -0.46925506,11.6323786,-0.812773764
+	persistentId = 1012847350
+	pos = -0.467458934,11.8683844,-0.805111527
 	attPos = 0,0,0
 	attPos0 = -0.46925506,0.00737857819,-0.812773764
 	rot = 0,-0.258819163,0,-0.965925813
@@ -3293,7 +3151,7 @@ PART
 	rigidAttachment = False
 	istg = 3
 	resPri = 0
-	dstg = 6
+	dstg = 7
 	sidx = -1
 	sqor = -1
 	sepI = 3
@@ -3406,8 +3264,8 @@ PART
 {
 	part = vela.high.gain.antenna.srf.1_4294290326
 	partName = Part
-	persistentId = 1773817874
-	pos = -8.21641635E-08,11.9715977,-0.939848483
+	persistentId = 1082358422
+	pos = 0.0017960507,12.2076035,-0.932186246
 	attPos = 0,0,0
 	attPos0 = -8.21641635E-08,0.346597672,-0.939848483
 	rot = 0,0,0,-1
@@ -3419,7 +3277,7 @@ PART
 	rigidAttachment = False
 	istg = 3
 	resPri = 0
-	dstg = 6
+	dstg = 7
 	sidx = -1
 	sqor = -1
 	sepI = 3
@@ -3513,8 +3371,8 @@ PART
 {
 	part = castor.truss.decoupler.s1p5.1_4294279716
 	partName = Part
-	persistentId = 2829364658
-	pos = 0,10.9375,0
+	persistentId = 819241586
+	pos = 0.00179613288,11.1735058,0.00766220875
 	attPos = 0,0,0
 	attPos0 = 0,-0.6875,0
 	rot = 0,0,0,1
@@ -3526,7 +3384,7 @@ PART
 	rigidAttachment = False
 	istg = 5
 	resPri = 0
-	dstg = 7
+	dstg = 8
 	sidx = 0
 	sqor = 5
 	sepI = 5
@@ -3620,8 +3478,8 @@ PART
 {
 	part = aquarius.service.module.s1p5.1_4294278046
 	partName = Part
-	persistentId = 19533765
-	pos = 0,10.25,0
+	persistentId = 3376688006
+	pos = 0.00179613288,10.4860058,0.00766220875
 	attPos = 0,0,0
 	attPos0 = 0,-0.6875,0
 	rot = 0,0,0,1
@@ -3633,7 +3491,7 @@ PART
 	rigidAttachment = False
 	istg = 5
 	resPri = 0
-	dstg = 8
+	dstg = 9
 	sidx = -1
 	sqor = -1
 	sepI = 5
@@ -3675,7 +3533,6 @@ PART
 		isEnabled = True
 		useVariantMass = True
 		stagingEnabled = True
-		selectedVariant = tantares_green
 		EVENTS
 		{
 		}
@@ -3713,8 +3570,8 @@ PART
 {
 	part = aquarius.service.module.s1p5.2_4294277542
 	partName = Part
-	persistentId = 1385704292
-	pos = 0,9.125,0
+	persistentId = 1899327363
+	pos = 0.00179613288,9.36100578,0.00766220875
 	attPos = 0,0,0
 	attPos0 = 0,-1.125,0
 	rot = 0,0,0,1
@@ -3726,7 +3583,7 @@ PART
 	rigidAttachment = False
 	istg = 5
 	resPri = 0
-	dstg = 8
+	dstg = 9
 	sidx = -1
 	sqor = -1
 	sepI = 5
@@ -3735,9 +3592,9 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = aquila.adapter.s1p5.s1.1_4294271592
+	link = aquila.adapter.s1p5.1_4292734292
 	attN = top,aquarius.service.module.s1p5.1_4294278046_0|0.75|0_0|1|0_0|0.75|0_0|1|0
-	attN = bottom,aquila.adapter.s1p5.s1.1_4294271592_0|-0.75|0_0|-1|0_0|-0.75|0_0|-1|0
+	attN = bottom,aquila.adapter.s1p5.1_4292734292_0|-0.75|0_0|-1|0_0|-0.75|0_0|-1|0
 	EVENTS
 	{
 	}
@@ -3768,7 +3625,6 @@ PART
 		isEnabled = True
 		useVariantMass = True
 		stagingEnabled = True
-		selectedVariant = tantares_green
 		EVENTS
 		{
 		}
@@ -3804,22 +3660,325 @@ PART
 }
 PART
 {
-	part = aquila.adapter.s1p5.s1.1_4294271592
+	part = vela.high.gain.antenna.srf.1_4294290136
 	partName = Part
-	persistentId = 624470972
-	pos = 0,8.28125,0
+	persistentId = 393786676
+	pos = 0.00179605337,12.9078264,-0.902412057
 	attPos = 0,0,0
-	attPos0 = 0,-0.84375,0
-	rot = 0,0,-1,0
-	attRot = 0,0,-0.99999994,0
-	attRot0 = 0,0,-1,0
+	attPos0 = 7.95612252E-08,0.0156793594,-0.910074294
+	rot = 0,0,1,0
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,-1
 	mir = 1,1,1
 	symMethod = Radial
-	autostrutMode = Heaviest
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 5
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,aquarius.engine.mount.s1p5.1_4294316058,collider,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDataTransmitter
+		isEnabled = True
+		xmitIncomplete = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			StartTransmissionAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = hamal.battery.srf.2_4294219506
+	partName = Part
+	persistentId = 1635686941
+	pos = 0.00179613288,13.1165066,0.495297909
+	attPos = 0,-0.255500793,0
+	attPos0 = 0,0.0625,0.487635702
+	rot = 0,0.707106829,0.707106829,0
+	attRot = 0,0,0,1
+	attRot0 = -0.707106829,0,0,-0.707106829
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 5
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = hamal.battery.srf.2_4294219290
+	srfN = srfAttach,aquarius.engine.mount.s1p5.1_4294316058,collider,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 200
+		maxAmount = 200
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = hamal.battery.srf.2_4294219290
+	partName = Part
+	persistentId = 12066023
+	pos = 0.00179617549,13.1165066,-0.479973495
+	attPos = 0,-0.255500793,0
+	attPos0 = -4.2630468E-08,0.0625,-0.487635702
+	rot = -0.707106829,-3.09086197E-08,-3.09086197E-08,0.707106829
+	attRot = 0,0,0,1
+	attRot0 = 3.09086197E-08,-0.707106829,0.707106829,3.09086197E-08
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 5
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = hamal.battery.srf.2_4294219506
+	srfN = srfAttach,aquarius.engine.mount.s1p5.1_4294316058,collider,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 200
+		maxAmount = 200
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = aquila.adapter.s1p5.1_4292734292
+	partName = Part
+	persistentId = 1985995940
+	pos = 0.00179613288,8.51725578,0.00766220875
+	attPos = 0,0,0
+	attPos0 = 0,-0.84375,0
+	rot = -1,0,0,0
+	attRot = -0.99999994,0,0,0
+	attRot0 = -1,0,0,0
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
 	rigidAttachment = False
 	istg = 5
 	resPri = 0
-	dstg = 8
+	dstg = 9
 	sidx = -1
 	sqor = -1
 	sepI = 5
@@ -3857,11 +4016,60 @@ PART
 	}
 	MODULE
 	{
-		name = ModulePartVariants
+		name = ModuleB9PartSwitch
 		isEnabled = True
-		useVariantMass = True
 		stagingEnabled = True
-		selectedVariant = tantares_green
+		moduleID = b9_mesh
+		currentSubtype = m_type_1
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_node
+		currentSubtype = m_size_1
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_colour
+		currentSubtype = c_tan
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
 		EVENTS
 		{
 		}
@@ -3877,20 +4085,20 @@ PART
 {
 	part = hamal.fuel.tank.s1.1_4293781298
 	partName = Part
-	persistentId = 1497463534
-	pos = 0,7.9375,0
+	persistentId = 4200213403
+	pos = 0.00179613288,8.17350578,0.00766220875
 	attPos = 0,0,0
 	attPos0 = 0,0.34375,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
-	attRot0 = 0,0,1,0
+	attRot0 = 1,0,0,0
 	mir = 1,1,1
 	symMethod = Mirror
 	autostrutMode = Off
 	rigidAttachment = False
 	istg = 5
 	resPri = 0
-	dstg = 8
+	dstg = 9
 	sidx = -1
 	sqor = -1
 	sepI = 5
@@ -3901,7 +4109,7 @@ PART
 	modSize = 0,0,0
 	link = corvus.lv.bare.engine.s1.2_4294267594
 	attN = bottom,corvus.lv.bare.engine.s1.2_4294267594_0|-0.25|0_0|-1|0_0|-0.25|0_0|-1|0
-	attN = top,aquila.adapter.s1p5.s1.1_4294271592_0|0.25|0_0|1|0_0|0.25|0_0|1|0
+	attN = top,aquila.adapter.s1p5.1_4292734292_0|0.25|0_0|1|0_0|0.25|0_0|1|0
 	EVENTS
 	{
 	}
@@ -3928,9 +4136,25 @@ PART
 	}
 	MODULE
 	{
-		name = ModulePartVariants
+		name = ModuleB9PartSwitch
 		isEnabled = True
-		useVariantMass = True
+		stagingEnabled = True
+		moduleID = b9_colour
+		currentSubtype = c_white
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -3969,8 +4193,8 @@ PART
 {
 	part = corvus.lv.bare.engine.s1.2_4294267594
 	partName = Part
-	persistentId = 1508470518
-	pos = 0,7.1875,0
+	persistentId = 2317961412
+	pos = 0.00179613288,7.42350578,0.00766220875
 	attPos = 0,0,0
 	attPos0 = 0,-0.75,0
 	rot = 0,0,0,1
@@ -3982,7 +4206,7 @@ PART
 	rigidAttachment = False
 	istg = 6
 	resPri = 0
-	dstg = 8
+	dstg = 9
 	sidx = 0
 	sqor = 6
 	sepI = 5
@@ -4173,6 +4397,21 @@ PART
 				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
 		}
 		UPGRADESAPPLIED
 		{

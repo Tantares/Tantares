@@ -1,5 +1,5 @@
 ship = [Soyuz] LOK
-version = 1.11.1
+version = 1.12.2
 description = 
 type = VAB
 size = 1.68084669,5.36249924,1.67499995
@@ -388,6 +388,9 @@ PART
 		isEnabled = True
 		acquireForceTweak = 100
 		crossfeed = True
+		nodeIsLocked = True
+		targetAngle = 0
+		inverted = False
 		stagingEnabled = False
 		state = Ready
 		dockUId = 0
@@ -397,6 +400,21 @@ PART
 		}
 		ACTIONS
 		{
+			ToggleLockedAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ServoEngageLockAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ServoDisgageLockAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
 			UndockAction
 			{
 				actionGroup = None
@@ -426,6 +444,20 @@ PART
 			{
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		AXISGROUPS
+		{
+			targetAngle
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 			}
 		}
 		UPGRADESAPPLIED
@@ -2106,6 +2138,7 @@ PART
 		isEnabled = True
 		isOn = False
 		uiWriteLock = False
+		disableColorPicker = True
 		lightR = 1
 		lightG = 1
 		lightB = 1
@@ -2400,7 +2433,7 @@ PART
 	resPri = 0
 	dstg = 6
 	sidx = 0
-	sqor = 6
+	sqor = 2
 	sepI = 1
 	attm = 0
 	sameVesselCollision = False

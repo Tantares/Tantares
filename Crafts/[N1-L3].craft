@@ -1,8 +1,8 @@
 ship = [N1-L3]
-version = 1.10.1
+version = 1.12.2
 description = 
 type = VAB
-size = 13.8615284,64.490715,13.8615313
+size = 13.8615284,64.490715,13.8615284
 steamPublishedFileId = 0
 persistentId = 2158530002
 rot = 0,0,0,0
@@ -16,7 +16,7 @@ PART
 {
 	part = libra.structure.s1.1_4293832658
 	partName = Part
-	persistentId = 4102390606
+	persistentId = 321271647
 	pos = 0,54.3375015,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0,0.287500381,0
@@ -149,7 +149,7 @@ PART
 {
 	part = lepus.landing.leg.srf.1_4293831974
 	partName = Part
-	persistentId = 3835517125
+	persistentId = 621087182
 	pos = -0.515800178,54.3376312,0.915800095
 	attPos = 0,0,0
 	attPos0 = -0.515800178,0.000128746033,0.515800118
@@ -201,6 +201,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleAnimateGeneric
 		isEnabled = True
 		aniState = LOCKED
@@ -227,6 +245,7 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
@@ -274,7 +293,7 @@ PART
 {
 	part = lepus.landing.leg.srf.1_4293830894
 	partName = Part
-	persistentId = 1794566659
+	persistentId = 1908602443
 	pos = 0.515800059,54.3376312,0.915800214
 	attPos = 0,0,0
 	attPos0 = 0.515800059,0.000128746033,0.515800178
@@ -326,6 +345,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleAnimateGeneric
 		isEnabled = True
 		aniState = LOCKED
@@ -352,6 +389,7 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 			}
 		}
@@ -395,7 +433,7 @@ PART
 {
 	part = lepus.landing.leg.srf.1_4293830804
 	partName = Part
-	persistentId = 1414006172
+	persistentId = 7062508
 	pos = 0.515800118,54.3376312,-0.115800172
 	attPos = 0,0,0
 	attPos0 = 0.515800118,0.000128746033,-0.515800178
@@ -447,6 +485,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleAnimateGeneric
 		isEnabled = True
 		aniState = LOCKED
@@ -473,6 +529,7 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 			}
 		}
@@ -516,7 +573,7 @@ PART
 {
 	part = lepus.landing.leg.srf.1_4293830714
 	partName = Part
-	persistentId = 2823618004
+	persistentId = 2249949813
 	pos = -0.515800118,54.3376312,-0.115800112
 	attPos = 0,0,0
 	attPos0 = -0.515800118,0.000128746033,-0.515800118
@@ -568,6 +625,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleAnimateGeneric
 		isEnabled = True
 		aniState = LOCKED
@@ -594,6 +669,7 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 			}
 		}
@@ -637,7 +713,7 @@ PART
 {
 	part = lepus.high.gain.antenna.srf.1_4293830398
 	partName = Part
-	persistentId = 1823886085
+	persistentId = 392584889
 	pos = -0.657915592,54.5001068,0.0201521814
 	attPos = 0,0,0
 	attPos0 = -0.657915592,0.162603378,-0.379847825
@@ -687,6 +763,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleDataTransmitter
 		isEnabled = True
 		xmitIncomplete = False
@@ -728,7 +822,7 @@ PART
 {
 	part = lepus.high.gain.antenna.srf.1_4293829848
 	partName = Part
-	persistentId = 524069468
+	persistentId = 1191055992
 	pos = 0.657915652,54.5001068,0.779847741
 	attPos = 0,0,0
 	attPos0 = 0.657915652,0.162603378,0.379847765
@@ -778,6 +872,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleDataTransmitter
 		isEnabled = True
 		xmitIncomplete = False
@@ -819,7 +931,7 @@ PART
 {
 	part = lepus.rocket.motor.srf.1_4293827796
 	partName = Part
-	persistentId = 3822111467
+	persistentId = 43532378
 	pos = -0.425098002,54.5068932,1.00710285
 	attPos = 0,0,0
 	attPos0 = -0.425098002,0.169392586,0.607102811
@@ -869,6 +981,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleEnginesFX
 		isEnabled = True
 		independentThrottle = False
@@ -914,6 +1044,7 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
@@ -924,6 +1055,7 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
@@ -951,7 +1083,7 @@ PART
 {
 	part = lepus.rocket.motor.srf.1_4293827508
 	partName = Part
-	persistentId = 2831782995
+	persistentId = 2200579262
 	pos = 0.425098002,54.5068932,1.00710285
 	attPos = 0,0,0
 	attPos0 = 0.425098002,0.169392586,0.607102811
@@ -1001,127 +1133,21 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleEnginesFX
+		name = ModuleCargoPart
 		isEnabled = True
-		independentThrottle = False
-		independentThrottlePercentage = 0
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		includeinDVCalcs = False
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
 		stagingEnabled = True
 		EVENTS
 		{
 		}
 		ACTIONS
 		{
-			OnAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ActivateAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ToggleThrottle
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		AXISGROUPS
-		{
-			independentThrottlePercentage
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisInverted = None
-			}
-			thrustPercentage
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisInverted = None
-			}
 		}
 		UPGRADESAPPLIED
 		{
 		}
-	}
-	RESOURCE
-	{
-		name = SolidFuel
-		amount = 4
-		maxAmount = 4
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = lepus.rocket.motor.srf.1_4293827084
-	partName = Part
-	persistentId = 295453959
-	pos = -0.426125675,54.5046959,-0.208570868
-	attPos = 0,0,0
-	attPos0 = -0.426125675,0.167194366,-0.608570874
-	rot = 0.299561381,0.0831220523,0.950087786,-0.0262082629
-	attRot = 0,-0.0871557668,-0.996194661,0
-	attRot0 = 0.299561381,0.0831219479,0.950087786,-0.0262082368
-	mir = 1,1,1
-	symMethod = Mirror
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 5
-	resPri = 0
-	dstg = 8
-	sidx = 1
-	sqor = 5
-	sepI = 4
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = lepus.rocket.motor.srf.1_4293826114
-	srfN = srfAttach,libra.structure.s1.1_4293832658,collider,0|0|0,0|0|-1,0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
 	}
 	MODULE
 	{
@@ -1170,12 +1196,158 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 			}
 			thrustPercentage
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 4
+		maxAmount = 4
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = lepus.rocket.motor.srf.1_4293827084
+	partName = Part
+	persistentId = 2626491503
+	pos = -0.426125675,54.5046959,-0.208570868
+	attPos = 0,0,0
+	attPos0 = -0.426125675,0.167194366,-0.608570874
+	rot = 0.299561381,0.0831220821,0.950087786,-0.0262082703
+	attRot = 0,-0.0871557668,-0.996194661,0
+	attRot0 = 0.299561381,0.0831219479,0.950087786,-0.0262082368
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 5
+	resPri = 0
+	dstg = 8
+	sidx = 1
+	sqor = 5
+	sepI = 4
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = lepus.rocket.motor.srf.1_4293826114
+	srfN = srfAttach,libra.structure.s1.1_4293832658,collider,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		independentThrottle = False
+		independentThrottlePercentage = 0
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		includeinDVCalcs = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ActivateAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ToggleThrottle
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		AXISGROUPS
+		{
+			independentThrottlePercentage
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+			}
+			thrustPercentage
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 			}
 		}
@@ -1199,7 +1371,7 @@ PART
 {
 	part = lepus.rocket.motor.srf.1_4293826114
 	partName = Part
-	persistentId = 3439111110
+	persistentId = 2793541955
 	pos = 0.426125675,54.5046959,-0.208570868
 	attPos = 0,0,0
 	attPos0 = 0.426125675,0.167194366,-0.608570874
@@ -1249,6 +1421,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleEnginesFX
 		isEnabled = True
 		independentThrottle = False
@@ -1294,12 +1484,14 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 			}
 			thrustPercentage
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 			}
 		}
@@ -1323,7 +1515,7 @@ PART
 {
 	part = libra.engine.s1.1_4293832974
 	partName = Part
-	persistentId = 3724702043
+	persistentId = 640766426
 	pos = 0,54.3375015,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0,-0.375,0
@@ -1419,6 +1611,7 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
@@ -1429,6 +1622,7 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
@@ -1481,6 +1675,28 @@ PART
 	}
 	RESOURCE
 	{
+		name = LiquidFuel
+		amount = 9
+		maxAmount = 9
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 11
+		maxAmount = 11
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
 		name = MonoPropellant
 		amount = 20
 		maxAmount = 20
@@ -1495,7 +1711,7 @@ PART
 {
 	part = libra.fuel.tank.s1.s0p5.1_4293833082
 	partName = Part
-	persistentId = 3333681096
+	persistentId = 1067869033
 	pos = 0,54.7125015,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0,-0.862500191,0
@@ -1564,6 +1780,28 @@ PART
 	}
 	RESOURCE
 	{
+		name = LiquidFuel
+		amount = 45
+		maxAmount = 45
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 55
+		maxAmount = 55
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
 		name = MonoPropellant
 		amount = 120
 		maxAmount = 120
@@ -1578,7 +1816,7 @@ PART
 {
 	part = lepus.low.gain.antenna.srf.1_4293829158
 	partName = Part
-	persistentId = 662247154
+	persistentId = 2830549535
 	pos = -0.121697068,54.8619385,0.854179621
 	attPos = 0,0,0
 	attPos0 = -0.121697068,0.149437904,0.454179585
@@ -1628,6 +1866,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleDataTransmitter
 		isEnabled = True
 		xmitIncomplete = False
@@ -1669,7 +1925,7 @@ PART
 {
 	part = lepus.low.gain.antenna.srf.1_4293828268
 	partName = Part
-	persistentId = 229434224
+	persistentId = 3895974182
 	pos = 0.121697031,54.8619385,-0.054179579
 	attPos = 0,0,0
 	attPos0 = 0.121697031,0.149437904,-0.454179585
@@ -1719,6 +1975,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleDataTransmitter
 		isEnabled = True
 		xmitIncomplete = False
@@ -1760,7 +2034,7 @@ PART
 {
 	part = libra.crew.s0p5.1_4293835234
 	partName = Part
-	persistentId = 1512430333
+	persistentId = 3078118679
 	pos = 0,55.5750046,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0.00236327993,18.4618855,0.183898836
@@ -1808,6 +2082,24 @@ PART
 	}
 	PARTDATA
 	{
+	}
+	MODULE
+	{
+		name = ModuleInventoryPart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		STOREDPARTS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 	MODULE
 	{
@@ -2034,9 +2326,20 @@ PART
 	}
 	RESOURCE
 	{
-		name = MonoPropellant
-		amount = 5
-		maxAmount = 5
+		name = LiquidFuel
+		amount = 2.7000000000000002
+		maxAmount = 2.7000000000000002
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 3.2999999999999998
+		maxAmount = 3.2999999999999998
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -2054,12 +2357,23 @@ PART
 		isVisible = True
 		flowMode = Both
 	}
+	RESOURCE
+	{
+		name = MonoPropellant
+		amount = 5
+		maxAmount = 5
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
 }
 PART
 {
 	part = libra.monopropellant.tank.s0.1_4293834236
 	partName = Part
-	persistentId = 2366907100
+	persistentId = 2328087616
 	pos = 0,56.375,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0,0.800000191,0
@@ -2130,6 +2444,28 @@ PART
 	}
 	RESOURCE
 	{
+		name = LiquidFuel
+		amount = 9
+		maxAmount = 9
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 11
+		maxAmount = 11
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
 		name = MonoPropellant
 		amount = 20
 		maxAmount = 20
@@ -2144,7 +2480,7 @@ PART
 {
 	part = libra.rcs.srf.2_4293834002
 	partName = Part
-	persistentId = 2261319245
+	persistentId = 1425082357
 	pos = -0.314492345,56.3692169,0.400000036
 	attPos = 0,0,0
 	attPos0 = -0.314492345,-0.0057849884,1.87452063E-08
@@ -2193,6 +2529,24 @@ PART
 	}
 	PARTDATA
 	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 	MODULE
 	{
@@ -2247,7 +2601,7 @@ PART
 {
 	part = libra.rcs.srf.2_4293833506
 	partName = Part
-	persistentId = 3167481611
+	persistentId = 3670499467
 	pos = 0,56.3692169,0.714492321
 	attPos = 0,0,0
 	attPos0 = 6.59055478E-16,-0.0057849884,0.314492315
@@ -2296,6 +2650,24 @@ PART
 	}
 	PARTDATA
 	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 	MODULE
 	{
@@ -2350,7 +2722,7 @@ PART
 {
 	part = libra.rcs.srf.2_4293833382
 	partName = Part
-	persistentId = 3467362567
+	persistentId = 2701541774
 	pos = 0.314492345,56.3692169,0.399999946
 	attPos = 0,0,0
 	attPos0 = 0.314492345,-0.0057849884,-4.6239002E-08
@@ -2399,6 +2771,24 @@ PART
 	}
 	PARTDATA
 	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 	MODULE
 	{
@@ -2453,7 +2843,7 @@ PART
 {
 	part = libra.rcs.srf.2_4293833258
 	partName = Part
-	persistentId = 1344131514
+	persistentId = 641636256
 	pos = -3.74857336E-08,56.3692169,0.0855076909
 	attPos = 0,0,0
 	attPos0 = -3.7490409E-08,-0.0057849884,-0.314492315
@@ -2502,6 +2892,24 @@ PART
 	}
 	PARTDATA
 	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 	MODULE
 	{
@@ -2556,7 +2964,7 @@ PART
 {
 	part = petra.docking.port.s0p5.1.female_4293825316
 	partName = Part
-	persistentId = 1221321607
+	persistentId = 275571243
 	pos = 0,56.5250015,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0,0.149999619,0
@@ -2611,6 +3019,9 @@ PART
 		isEnabled = True
 		acquireForceTweak = 100
 		crossfeed = True
+		nodeIsLocked = True
+		targetAngle = 0
+		inverted = False
 		stagingEnabled = False
 		state = Ready
 		dockUId = 0
@@ -2620,6 +3031,21 @@ PART
 		}
 		ACTIONS
 		{
+			ToggleLockedAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ServoEngageLockAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ServoDisgageLockAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
 			UndockAction
 			{
 				actionGroup = None
@@ -2651,6 +3077,20 @@ PART
 				wasActiveBeforePartWasAdjusted = False
 			}
 		}
+		AXISGROUPS
+		{
+			targetAngle
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+			}
+		}
 		UPGRADESAPPLIED
 		{
 		}
@@ -2660,7 +3100,7 @@ PART
 {
 	part = virgo.engine.s1.1_4293119604
 	partName = Part
-	persistentId = 983471981
+	persistentId = 598061637
 	pos = 0,56.9250031,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0,0.400000572,0
@@ -2756,6 +3196,7 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
@@ -2766,6 +3207,7 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
@@ -2813,7 +3255,7 @@ PART
 {
 	part = virgo.radiator.fuel.tank.s1.2_4293139584
 	partName = Part
-	persistentId = 692214364
+	persistentId = 2785744275
 	pos = 0,57.8000031,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0,-0.6875,0
@@ -2865,6 +3307,28 @@ PART
 	}
 	RESOURCE
 	{
+		name = LiquidFuel
+		amount = 90
+		maxAmount = 90
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 110
+		maxAmount = 110
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
 		name = MonoPropellant
 		amount = 240
 		maxAmount = 240
@@ -2879,7 +3343,7 @@ PART
 {
 	part = octans.star.tracker.srf.1_4293093408
 	partName = Part
-	persistentId = 3572209212
+	persistentId = 3723791942
 	pos = -0.557277143,57.5048904,0.72174412
 	attPos = 0,0,0
 	attPos0 = -0.557277143,-0.295114517,0.321744114
@@ -2928,6 +3392,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleSAS
 		isEnabled = True
 		standaloneToggle = True
@@ -2964,7 +3446,7 @@ PART
 {
 	part = virgo.fuel.tank.s1.1_4293140068
 	partName = Part
-	persistentId = 4169297977
+	persistentId = 465619136
 	pos = 0,58.4875031,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0,-0.262499809,0
@@ -3015,6 +3497,28 @@ PART
 	}
 	RESOURCE
 	{
+		name = LiquidFuel
+		amount = 45
+		maxAmount = 45
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 55
+		maxAmount = 55
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
 		name = MonoPropellant
 		amount = 90
 		maxAmount = 90
@@ -3029,7 +3533,7 @@ PART
 {
 	part = tantares.decoupler.s1.1_4293158652
 	partName = Part
-	persistentId = 729494247
+	persistentId = 4001927654
 	pos = 0,58.7500038,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0,-0.149999619,0
@@ -3127,7 +3631,7 @@ PART
 {
 	part = octans.moe.linear.srf.1_4293109186
 	partName = Part
-	persistentId = 3913851706
+	persistentId = 3990157929
 	pos = 0,58.7576141,1.0065043
 	attPos = 0,0,0
 	attPos0 = 0,0.00761222839,0.606504321
@@ -3176,6 +3680,24 @@ PART
 	}
 	PARTDATA
 	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 	MODULE
 	{
@@ -3230,7 +3752,7 @@ PART
 {
 	part = octans.moe.linear.srf.1_4293108756
 	partName = Part
-	persistentId = 2218531741
+	persistentId = 3200066657
 	pos = 0.606504261,58.7576141,0.400000036
 	attPos = 0,0,0
 	attPos0 = 0.606504261,0.00761222839,3.61504746E-08
@@ -3279,6 +3801,24 @@ PART
 	}
 	PARTDATA
 	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 	MODULE
 	{
@@ -3333,7 +3873,7 @@ PART
 {
 	part = octans.moe.linear.srf.1_4293108702
 	partName = Part
-	persistentId = 3332752031
+	persistentId = 3555072957
 	pos = -5.29689714E-08,58.7576141,-0.206504315
 	attPos = 0,0,0
 	attPos0 = -5.30222906E-08,0.00761222839,-0.606504321
@@ -3382,6 +3922,24 @@ PART
 	}
 	PARTDATA
 	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 	MODULE
 	{
@@ -3436,7 +3994,7 @@ PART
 {
 	part = octans.moe.linear.srf.1_4293108648
 	partName = Part
-	persistentId = 3407339293
+	persistentId = 2014973457
 	pos = -0.606504261,58.7576141,0.400000036
 	attPos = 0,0,0
 	attPos0 = -0.606504261,0.00761222839,3.61504746E-08
@@ -3485,6 +4043,24 @@ PART
 	}
 	PARTDATA
 	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 	MODULE
 	{
@@ -3539,7 +4115,7 @@ PART
 {
 	part = octans.light.srf.2_4293091766
 	partName = Part
-	persistentId = 662980222
+	persistentId = 2381685322
 	pos = 0.429299563,58.757637,0.82929951
 	attPos = 0,0,0
 	attPos0 = 0.429299563,0.00763511658,0.429299504
@@ -3588,13 +4164,38 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleLight
 		isEnabled = True
 		isOn = False
 		uiWriteLock = False
+		disableColorPicker = True
 		lightR = 1
 		lightG = 1
 		lightB = 1
+		castLight = True
+		movementTransformName = movementTransformName
+		isBlinking = False
+		rotationAngle = 0
+		pitchAngle = 0
+		blinkRate = 1
 		stagingEnabled = True
 		EVENTS
 		{
@@ -3623,6 +4224,7 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
@@ -3633,6 +4235,7 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
@@ -3643,6 +4246,40 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+			}
+			rotationAngle
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+			}
+			pitchAngle
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+			}
+			blinkRate
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
@@ -3676,7 +4313,7 @@ PART
 {
 	part = tantares.heatshield.s1.1_4293159782
 	partName = Part
-	persistentId = 1168876887
+	persistentId = 3285471519
 	pos = 0,58.9000015,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0,-0.574999809,0
@@ -3819,7 +4456,7 @@ PART
 {
 	part = virgo.crew.s1.1_4293189716
 	partName = Part
-	persistentId = 1434796856
+	persistentId = 3089155648
 	pos = 0,59.4750023,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0.644240856,21.9483948,0.108815581
@@ -4075,6 +4712,28 @@ PART
 	}
 	RESOURCE
 	{
+		name = LiquidFuel
+		amount = 2.7000000000000002
+		maxAmount = 2.7000000000000002
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 3.2999999999999998
+		maxAmount = 3.2999999999999998
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
 		name = MonoPropellant
 		amount = 5
 		maxAmount = 5
@@ -4089,7 +4748,7 @@ PART
 {
 	part = tantares.parachute.s0.1_4293177968
 	partName = Part
-	persistentId = 2086106589
+	persistentId = 1478826632
 	pos = 0,60,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0,0.524999619,0
@@ -4243,7 +4902,7 @@ PART
 {
 	part = virgo.orbital.module.s1.1_4293177048
 	partName = Part
-	persistentId = 1539802036
+	persistentId = 2201934444
 	pos = 0,60.6000023,0.400000006
 	attPos = -0.00100135885,12.3361816,0.0786958933
 	attPos0 = 0.00100135885,48.2638206,0.321304113
@@ -4402,7 +5061,7 @@ PART
 {
 	part = petra.docking.port.s0p5.1.male_4293166778
 	partName = Part
-	persistentId = 228961802
+	persistentId = 3770468874
 	pos = 0,61.5250015,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0,0.925001144,0
@@ -4462,6 +5121,9 @@ PART
 		isEnabled = True
 		acquireForceTweak = 100
 		crossfeed = True
+		nodeIsLocked = True
+		targetAngle = 0
+		inverted = False
 		stagingEnabled = False
 		state = Ready
 		dockUId = 0
@@ -4471,6 +5133,21 @@ PART
 		}
 		ACTIONS
 		{
+			ToggleLockedAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ServoEngageLockAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ServoDisgageLockAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
 			UndockAction
 			{
 				actionGroup = None
@@ -4502,6 +5179,20 @@ PART
 				wasActiveBeforePartWasAdjusted = False
 			}
 		}
+		AXISGROUPS
+		{
+			targetAngle
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+			}
+		}
 		UPGRADESAPPLIED
 		{
 		}
@@ -4511,7 +5202,7 @@ PART
 {
 	part = octans.moe.srf.3_4293107290
 	partName = Part
-	persistentId = 2581382884
+	persistentId = 2198555108
 	pos = 0.416237444,61.264122,0.400000036
 	attPos = 0,0,0
 	attPos0 = 0.416237444,-0.260881424,2.48096867E-08
@@ -4560,6 +5251,24 @@ PART
 	}
 	PARTDATA
 	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 	MODULE
 	{
@@ -4614,7 +5323,7 @@ PART
 {
 	part = octans.moe.srf.3_4293106856
 	partName = Part
-	persistentId = 3387521935
+	persistentId = 1192246293
 	pos = 4.95929271E-08,61.264122,-0.0162374079
 	attPos = 0,0,0
 	attPos0 = 4.96193699E-08,-0.260881424,-0.416237414
@@ -4663,6 +5372,24 @@ PART
 	}
 	PARTDATA
 	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 	MODULE
 	{
@@ -4717,7 +5444,7 @@ PART
 {
 	part = octans.moe.srf.3_4293106794
 	partName = Part
-	persistentId = 3880031351
+	persistentId = 426505808
 	pos = -0.416237444,61.264122,0.400000006
 	attPos = 0,0,0
 	attPos0 = -0.416237444,-0.260881424,1.15789467E-08
@@ -4766,6 +5493,24 @@ PART
 	}
 	PARTDATA
 	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 	MODULE
 	{
@@ -4820,7 +5565,7 @@ PART
 {
 	part = octans.moe.srf.3_4293106732
 	partName = Part
-	persistentId = 204014039
+	persistentId = 67077579
 	pos = 0,61.264122,0.81623745
 	attPos = 0,0,0
 	attPos0 = -2.97584274E-16,-0.260881424,0.416237414
@@ -4869,6 +5614,24 @@ PART
 	}
 	PARTDATA
 	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 	MODULE
 	{
@@ -4923,7 +5686,7 @@ PART
 {
 	part = lepus.low.gain.antenna.srf.1_4293098814
 	partName = Part
-	persistentId = 1123571178
+	persistentId = 3876950782
 	pos = -0.267669111,61.3988914,0.132330924
 	attPos = 0,0,0
 	attPos0 = -0.267669111,-0.126111984,-0.267669082
@@ -4972,6 +5735,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleDataTransmitter
 		isEnabled = True
 		xmitIncomplete = False
@@ -5013,7 +5794,7 @@ PART
 {
 	part = strutOcto_4287495726
 	partName = Part
-	persistentId = 117439554
+	persistentId = 2895083297
 	pos = 0,61.7845421,0.400000006
 	attPos = 0,-0.21919632,0
 	attPos0 = 0,0.47873497,0
@@ -5064,12 +5845,11 @@ PART
 	}
 	MODULE
 	{
-		name = TweakScale
+		name = ModuleCargoPart
 		isEnabled = True
-		currentScale = 100
-		defaultScale = 100
-		defaultTransformScale = (0, 0, 0)
-		DryCost = 20
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -5086,7 +5866,7 @@ PART
 {
 	part = strutOcto_4287494444
 	partName = Part
-	persistentId = 604105377
+	persistentId = 1150627441
 	pos = 0,62.0420113,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0,0.257469177,0
@@ -5137,12 +5917,11 @@ PART
 	}
 	MODULE
 	{
-		name = TweakScale
+		name = ModuleCargoPart
 		isEnabled = True
-		currentScale = 100
-		defaultScale = 100
-		defaultTransformScale = (0, 0, 0)
-		DryCost = 20
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -5159,7 +5938,7 @@ PART
 {
 	part = strutOcto_4287493222
 	partName = Part
-	persistentId = 2076991679
+	persistentId = 3653662203
 	pos = 0,62.2994804,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0,0.257469177,0
@@ -5210,12 +5989,11 @@ PART
 	}
 	MODULE
 	{
-		name = TweakScale
+		name = ModuleCargoPart
 		isEnabled = True
-		currentScale = 100
-		defaultScale = 100
-		defaultTransformScale = (0, 0, 0)
-		DryCost = 20
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -5232,7 +6010,7 @@ PART
 {
 	part = octans.les.s0.1_4287588948
 	partName = Part
-	persistentId = 1001125966
+	persistentId = 4072164637
 	pos = 0,64.428215,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0,2.12873459,0
@@ -5326,6 +6104,7 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
@@ -5336,6 +6115,7 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
@@ -5385,7 +6165,7 @@ PART
 {
 	part = castor.decoupler.s1.1_4294007842
 	partName = Part
-	persistentId = 1692237571
+	persistentId = 681811810
 	pos = 0,54.0500031,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0,-0.287498474,0
@@ -5508,7 +6288,7 @@ PART
 {
 	part = alnair.us.fuel.tank.s2.1_4294008880
 	partName = Part
-	persistentId = 3013668937
+	persistentId = 1183797924
 	pos = 0,52.6125031,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0,-1.4375,0
@@ -5600,7 +6380,7 @@ PART
 {
 	part = alnair.us.engine.s1.1_4294003208
 	partName = Part
-	persistentId = 1530199579
+	persistentId = 1815834330
 	pos = 0,50.6125031,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0,-2,0
@@ -5696,6 +6476,7 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
@@ -5706,6 +6487,7 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
@@ -5809,12 +6591,27 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = castor.decoupler.s1.1_4293991814
 	partName = Part
-	persistentId = 901640420
+	persistentId = 4141900891
 	pos = 0,49.9250031,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0,-0.6875,0
@@ -5937,7 +6734,7 @@ PART
 {
 	part = canopus.fairing.s2.1_4293979628
 	partName = Part
-	persistentId = 438221840
+	persistentId = 1374272535
 	pos = 0,49.8000031,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0,-0.125,0
@@ -6098,7 +6895,7 @@ PART
 {
 	part = libra.lv.fuel.tank.s2.1_4293972164
 	partName = Part
-	persistentId = 1520345789
+	persistentId = 2934383349
 	pos = 0,49.2375031,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0,-0.5625,0
@@ -6174,7 +6971,7 @@ PART
 {
 	part = libra.lv.fuel.tank.s2.2_4293980064
 	partName = Part
-	persistentId = 2795116679
+	persistentId = 1377881102
 	pos = 0,47.7375031,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0,-1.5,0
@@ -6250,7 +7047,7 @@ PART
 {
 	part = libra.lv.mount.s2.1_4293973340
 	partName = Part
-	persistentId = 8215568
+	persistentId = 884638079
 	pos = 0,46.2375031,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0,-1.5,0
@@ -6327,7 +7124,7 @@ PART
 {
 	part = libra.lv.engine.s0.3_4293968622
 	partName = Part
-	persistentId = 2406176513
+	persistentId = 1709123050
 	pos = 0,45.7375031,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0,-0.5,0
@@ -6423,6 +7220,7 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
@@ -6433,6 +7231,7 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
@@ -6513,6 +7312,29 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleJettison
+		isEnabled = True
+		activejettisonName = fairings
+		isJettisoned = False
+		shroudHideOverride = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleSurfaceFX
 		isEnabled = True
 		stagingEnabled = True
@@ -6579,12 +7401,43 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = castor.decoupler.s1.1_4293952024
 	partName = Part
-	persistentId = 1965895961
+	persistentId = 2939660529
 	pos = 0,44.6750031,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0,-1.0625,0
@@ -6707,7 +7560,7 @@ PART
 {
 	part = canopus.fairing.s3.1_4293948490
 	partName = Part
-	persistentId = 3985891633
+	persistentId = 2984006239
 	pos = 0,44.5500031,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0,-0.125,0
@@ -7078,7 +7931,7 @@ PART
 {
 	part = libra.lv.fuel.tank.s4.s3.1_4293950074
 	partName = Part
-	persistentId = 2963562895
+	persistentId = 978494125
 	pos = 0,40.6125031,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0,-3.9375,0
@@ -7208,7 +8061,7 @@ PART
 {
 	part = libra.lv.engine.s0.1_4293916030
 	partName = Part
-	persistentId = 4178962417
+	persistentId = 2406944879
 	pos = 0,37.6125031,2.1500001
 	attPos = 0,0,0
 	attPos0 = 0,-3,1.75
@@ -7306,6 +8159,7 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
@@ -7316,6 +8170,7 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
@@ -7396,6 +8251,29 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleJettison
+		isEnabled = True
+		activejettisonName = fairings
+		isJettisoned = True
+		shroudHideOverride = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleSurfaceFX
 		isEnabled = True
 		stagingEnabled = True
@@ -7462,12 +8340,43 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = libra.lv.engine.s0.1_4293910458
 	partName = Part
-	persistentId = 2092620116
+	persistentId = 3598062625
 	pos = 1.75,37.6125031,0.400000006
 	attPos = 0,0,0
 	attPos0 = 1.75,-3,0
@@ -7565,12 +8474,14 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 			}
 			thrustPercentage
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 			}
 		}
@@ -7636,6 +8547,29 @@ PART
 				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleRollAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		activejettisonName = fairings
+		isJettisoned = True
+		shroudHideOverride = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			JettisonAction
 			{
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
@@ -7713,12 +8647,43 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = libra.lv.engine.s0.1_4293910344
 	partName = Part
-	persistentId = 2377940189
+	persistentId = 1398415626
 	pos = 0,37.6125031,-1.35000002
 	attPos = 0,0,0
 	attPos0 = 0,-3,-1.75
@@ -7816,12 +8781,14 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 			}
 			thrustPercentage
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 			}
 		}
@@ -7887,6 +8854,29 @@ PART
 				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleRollAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		activejettisonName = fairings
+		isJettisoned = True
+		shroudHideOverride = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			JettisonAction
 			{
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
@@ -7964,12 +8954,43 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = libra.lv.engine.s0.1_4293910230
 	partName = Part
-	persistentId = 2851621538
+	persistentId = 2950885965
 	pos = -1.75,37.6125031,0.400000006
 	attPos = 0,0,0
 	attPos0 = -1.75,-3,0
@@ -8067,12 +9088,14 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 			}
 			thrustPercentage
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 			}
 		}
@@ -8138,6 +9161,29 @@ PART
 				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleRollAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		activejettisonName = fairings
+		isJettisoned = True
+		shroudHideOverride = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			JettisonAction
 			{
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
@@ -8215,12 +9261,43 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = castor.decoupler.s4.1_4293917988
 	partName = Part
-	persistentId = 788433565
+	persistentId = 3985415548
 	pos = 0,36.5500031,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0,-4.0625,0
@@ -8327,7 +9404,7 @@ PART
 {
 	part = libra.lv.fuel.tank.s6.s4.1_4293907292
 	partName = Part
-	persistentId = 1235680458
+	persistentId = 1233896711
 	pos = 0,29.4875031,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0,-7.0625,0
@@ -8465,7 +9542,7 @@ PART
 {
 	part = libra.lv.engine.s0.2_4293901702
 	partName = Part
-	persistentId = 1650230582
+	persistentId = 3854202369
 	pos = 0,23.7625008,2.7750001
 	attPos = 0,0,0
 	attPos0 = 0,-5.72500229,2.375
@@ -8567,6 +9644,7 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
@@ -8577,6 +9655,7 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
@@ -8657,6 +9736,29 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleJettison
+		isEnabled = True
+		activejettisonName = fairings
+		isJettisoned = True
+		shroudHideOverride = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleSurfaceFX
 		isEnabled = True
 		stagingEnabled = True
@@ -8723,12 +9825,43 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = libra.lv.engine.s0.2_4293898912
 	partName = Part
-	persistentId = 1882895675
+	persistentId = 2630748148
 	pos = 1.67937899,23.7625008,2.07937908
 	attPos = 0,0,0
 	attPos0 = 1.67937899,-5.72500229,1.67937899
@@ -8830,12 +9963,14 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 			}
 			thrustPercentage
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 			}
 		}
@@ -8901,6 +10036,29 @@ PART
 				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleRollAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		activejettisonName = fairings
+		isJettisoned = True
+		shroudHideOverride = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			JettisonAction
 			{
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
@@ -8978,12 +10136,43 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = libra.lv.engine.s0.2_4293898798
 	partName = Part
-	persistentId = 3652646029
+	persistentId = 3139125306
 	pos = 2.375,23.7625008,0.400000006
 	attPos = 0,0,0
 	attPos0 = 2.375,-5.72500229,0
@@ -9085,12 +10274,14 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 			}
 			thrustPercentage
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 			}
 		}
@@ -9156,6 +10347,29 @@ PART
 				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleRollAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		activejettisonName = fairings
+		isJettisoned = True
+		shroudHideOverride = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			JettisonAction
 			{
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
@@ -9233,12 +10447,43 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = libra.lv.engine.s0.2_4293898684
 	partName = Part
-	persistentId = 406832041
+	persistentId = 1861527746
 	pos = 1.67937899,23.7625008,-1.27937901
 	attPos = 0,0,0
 	attPos0 = 1.67937899,-5.72500229,-1.67937899
@@ -9340,12 +10585,14 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 			}
 			thrustPercentage
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 			}
 		}
@@ -9411,6 +10658,29 @@ PART
 				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleRollAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		activejettisonName = fairings
+		isJettisoned = True
+		shroudHideOverride = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			JettisonAction
 			{
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
@@ -9488,12 +10758,43 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = libra.lv.engine.s0.2_4293898570
 	partName = Part
-	persistentId = 3826605421
+	persistentId = 2909541579
 	pos = 0,23.7625008,-1.97500002
 	attPos = 0,0,0
 	attPos0 = 0,-5.72500229,-2.375
@@ -9595,12 +10896,14 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 			}
 			thrustPercentage
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 			}
 		}
@@ -9666,6 +10969,29 @@ PART
 				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleRollAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		activejettisonName = fairings
+		isJettisoned = True
+		shroudHideOverride = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			JettisonAction
 			{
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
@@ -9743,12 +11069,43 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = libra.lv.engine.s0.2_4293898456
 	partName = Part
-	persistentId = 3955846988
+	persistentId = 1348980752
 	pos = -1.67937899,23.7625008,-1.27937901
 	attPos = 0,0,0
 	attPos0 = -1.67937899,-5.72500229,-1.67937899
@@ -9850,12 +11207,14 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 			}
 			thrustPercentage
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 			}
 		}
@@ -9921,6 +11280,29 @@ PART
 				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleRollAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		activejettisonName = fairings
+		isJettisoned = True
+		shroudHideOverride = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			JettisonAction
 			{
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
@@ -9998,12 +11380,43 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = libra.lv.engine.s0.2_4293898342
 	partName = Part
-	persistentId = 3333607323
+	persistentId = 1963138767
 	pos = -2.375,23.7625008,0.400000006
 	attPos = 0,0,0
 	attPos0 = -2.375,-5.72500229,0
@@ -10105,12 +11518,14 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 			}
 			thrustPercentage
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 			}
 		}
@@ -10176,6 +11591,29 @@ PART
 				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleRollAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		activejettisonName = fairings
+		isJettisoned = True
+		shroudHideOverride = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			JettisonAction
 			{
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
@@ -10253,12 +11691,43 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = libra.lv.engine.s0.2_4293898228
 	partName = Part
-	persistentId = 3575147986
+	persistentId = 4283587972
 	pos = -1.67937899,23.7625008,2.07937908
 	attPos = 0,0,0
 	attPos0 = -1.67937899,-5.72500229,1.67937899
@@ -10360,12 +11829,14 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 			}
 			thrustPercentage
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 			}
 		}
@@ -10431,6 +11902,29 @@ PART
 				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleRollAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		activejettisonName = fairings
+		isJettisoned = True
+		shroudHideOverride = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			JettisonAction
 			{
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
@@ -10508,12 +12002,43 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = castor.decoupler.s6.1_4293896076
 	partName = Part
-	persistentId = 411686090
+	persistentId = 1951048718
 	pos = 0,22.4250031,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0,-7.0625,0
@@ -10620,7 +12145,7 @@ PART
 {
 	part = libra.lv.fuel.tank.s7p5.s6.1_4293894214
 	partName = Part
-	persistentId = 70815757
+	persistentId = 790012692
 	pos = 0,13.7375031,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0,-8.6875,0
@@ -10700,7 +12225,7 @@ PART
 {
 	part = libra.lv.engine.s7p5.1_4293881018
 	partName = Part
-	persistentId = 211113187
+	persistentId = 4112609901
 	pos = 0,3.48750305,0.400000006
 	attPos = 0,0,0
 	attPos0 = 0,-10.25,0
@@ -10794,6 +12319,7 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
@@ -10804,6 +12330,7 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
@@ -10902,7 +12429,7 @@ PART
 {
 	part = libra.lv.basic.grid.fin.srf.2_4293891368
 	partName = Part
-	persistentId = 2036674281
+	persistentId = 1621980570
 	pos = -4.64326429,5.69776154,0.400000274
 	attPos = 0,0,0
 	attPos0 = -4.64326429,-8.03974152,2.68220901E-07
@@ -10972,7 +12499,7 @@ PART
 {
 	part = libra.lv.basic.grid.fin.srf.2_4293878776
 	partName = Part
-	persistentId = 1758436237
+	persistentId = 1023223195
 	pos = -8.53923332E-09,5.69776154,5.04326391
 	attPos = 0,0,0
 	attPos0 = -8.53923332E-09,-8.03974152,4.64326382
@@ -11042,7 +12569,7 @@ PART
 {
 	part = libra.lv.basic.grid.fin.srf.2_4293878726
 	partName = Part
-	persistentId = 1653150608
+	persistentId = 906493436
 	pos = 4.64326429,5.69776154,0.399999321
 	attPos = 0,0,0
 	attPos0 = 4.64326429,-8.03974152,-6.85453415E-07
@@ -11112,7 +12639,7 @@ PART
 {
 	part = libra.lv.basic.grid.fin.srf.2_4293878676
 	partName = Part
-	persistentId = 563273269
+	persistentId = 84503114
 	pos = -5.44980992E-07,5.69776154,-4.24326372
 	attPos = 0,0,0
 	attPos0 = -5.44980992E-07,-8.03974152,-4.64326382

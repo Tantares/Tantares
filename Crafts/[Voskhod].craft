@@ -1,10 +1,10 @@
-ship = [Voskhod] KSP 1.12
-version = 1.12.0
+ship = [Voskhod]
+version = 1.12.2
 description = 
 type = VAB
-size = 1.29999995,2.9864254,1.53867364
+size = 1.30782795,3.01716042,1.54258776
 steamPublishedFileId = 0
-persistentId = 3234545787
+persistentId = 1027598713
 rot = 0,0,0,0
 missionFlag = Squad/Flags/stripes
 vesselType = Debris
@@ -16,7 +16,7 @@ PART
 {
 	part = andromeda.crew.s1.2_4294210852
 	partName = Part
-	persistentId = 223564696
+	persistentId = 2164274446
 	pos = -3.15022049E-07,14.9479532,1.10727542E-05
 	attPos = 0,0,0
 	attPos0 = -3.15022049E-07,14.9479532,1.10727542E-05
@@ -40,11 +40,11 @@ PART
 	modSize = 0,0,0
 	link = andromeda.decoupler.s0p5.1_4293958048
 	link = andromeda.airlock.s0.1_4293953720
-	link = Andromeda.Antenna.1_4293949606
-	link = Andromeda.Antenna.1_4293947914
-	link = Andromeda.Antenna.1_4293947864
-	link = Andromeda.Antenna.1_4293947814
 	link = tantares.parachute.s0.1_4293965532
+	link = andromeda.low.gain.antenna.srf.1_4293947914
+	link = andromeda.low.gain.antenna.srf.1_4292627354
+	link = andromeda.low.gain.antenna.srf.1_4292627292
+	link = andromeda.low.gain.antenna.srf.1_4292627230
 	attN = bottom,andromeda.decoupler.s0p5.1_4293958048_0|-0.540000021|0_0|-1|0_0|-0.540000021|0_0|-1|0
 	attN = top,tantares.parachute.s0.1_4293965532_0|0.540000021|0_0|1|0_0|0.540000021|0_0|1|0
 	EVENTS
@@ -133,25 +133,21 @@ PART
 			CycleAction
 			{
 				actionGroup = None
-				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
 			Activate
 			{
 				actionGroup = None
-				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
 			Deactivate
 			{
 				actionGroup = None
-				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
 			Toggle
 			{
 				actionGroup = None
-				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
 		}
@@ -247,21 +243,6 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleTorqueController
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ModuleB9PartInfo
 		isEnabled = False
 		stagingEnabled = True
@@ -332,7 +313,7 @@ PART
 {
 	part = andromeda.decoupler.s0p5.1_4293958048
 	partName = Part
-	persistentId = 2257082637
+	persistentId = 2542711075
 	pos = -3.15022049E-07,14.3454533,1.10727542E-05
 	attPos = 0,0,0
 	attPos0 = 0,-0.602499962,0
@@ -355,18 +336,18 @@ PART
 	modMass = 0
 	modSize = 0,0,0
 	link = andromeda.avionics.s1.1_4293957404
-	link = Andromeda.FuelSphere.1_4293946476
-	link = Andromeda.FuelSphere.1_4293945962
-	link = Andromeda.FuelSphere.1_4293945930
-	link = Andromeda.FuelSphere.1_4293945898
-	link = Andromeda.FuelSphere.1_4293945866
-	link = Andromeda.FuelSphere.1_4293945834
-	link = Andromeda.FuelSphere.1_4293946774
-	link = Andromeda.FuelSphere.1_4293945664
-	link = Andromeda.FuelSphere.1_4293945632
-	link = Andromeda.FuelSphere.1_4293945600
-	link = Andromeda.FuelSphere.1_4293945568
-	link = Andromeda.FuelSphere.1_4293945536
+	link = andromeda.sphere.fuel.tank.srf.1_4293946476
+	link = andromeda.sphere.fuel.tank.srf.1_4293945962
+	link = andromeda.sphere.fuel.tank.srf.1_4293945930
+	link = andromeda.sphere.fuel.tank.srf.1_4293945898
+	link = andromeda.sphere.fuel.tank.srf.1_4293945866
+	link = andromeda.sphere.fuel.tank.srf.1_4293945834
+	link = andromeda.sphere.fuel.tank.srf.1_4293946774
+	link = andromeda.sphere.fuel.tank.srf.1_4293945664
+	link = andromeda.sphere.fuel.tank.srf.1_4293945632
+	link = andromeda.sphere.fuel.tank.srf.1_4293945600
+	link = andromeda.sphere.fuel.tank.srf.1_4293945568
+	link = andromeda.sphere.fuel.tank.srf.1_4293945536
 	attN = bottom,andromeda.avionics.s1.1_4293957404_0|-0.0625|0_0|-1|0_0|-0.0625|0_0|-1|0
 	attN = top,andromeda.crew.s1.2_4294210852_0|0.0625|0_0|1|0_0|0.0625|0_0|1|0
 	EVENTS
@@ -420,7 +401,7 @@ PART
 {
 	part = andromeda.avionics.s1.1_4293957404
 	partName = Part
-	persistentId = 750083655
+	persistentId = 4281360749
 	pos = -3.15022049E-07,14.0954533,1.10727542E-05
 	attPos = 0,0,0
 	attPos0 = 0,-0.25,0
@@ -576,25 +557,21 @@ PART
 			CycleAction
 			{
 				actionGroup = None
-				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
 			Activate
 			{
 				actionGroup = None
-				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
 			Deactivate
 			{
 				actionGroup = None
-				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
 			Toggle
 			{
 				actionGroup = None
-				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
 		}
@@ -607,21 +584,6 @@ PART
 		name = ModuleSAS
 		isEnabled = True
 		standaloneToggle = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTorqueController
-		isEnabled = True
 		stagingEnabled = True
 		EVENTS
 		{
@@ -652,12 +614,23 @@ PART
 		{
 		}
 	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 100
+		maxAmount = 100
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
 }
 PART
 {
 	part = andromeda.airlock.s0.1_4293953720
 	partName = Part
-	persistentId = 2593590387
+	persistentId = 3658300617
 	pos = -2.76645693E-07,15.1086473,-0.439805388
 	attPos = -1.29450939E-08,-0.0537939072,0.147232533
 	attPos0 = 5.13214538E-08,0.214488029,-0.587049007
@@ -788,7 +761,7 @@ PART
 {
 	part = andromeda.engine.s1.1_4293952572
 	partName = Part
-	persistentId = 1812754058
+	persistentId = 4069317745
 	pos = -3.15022049E-07,13.6079531,1.10705214E-05
 	attPos = 0,0,0
 	attPos0 = 0,-0.487500191,-2.23304686E-09
@@ -802,7 +775,7 @@ PART
 	istg = 4
 	resPri = 0
 	dstg = 2
-	sidx = 0
+	sidx = 1
 	sqor = 4
 	sepI = 2
 	attm = 0
@@ -810,10 +783,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = Andromeda.Antenna.2_4293951042
-	link = Andromeda.Antenna.2_4293950426
-	link = Andromeda.Antenna.2_4293950388
-	link = Andromeda.Antenna.2_4293950350
+	link = andromeda.low.gain.antenna.srf.1_4293951042
+	link = andromeda.low.gain.antenna.srf.1_4292608764
+	link = andromeda.low.gain.antenna.srf.1_4293950388
+	link = andromeda.low.gain.antenna.srf.1_4293950350
 	attN = bottom,Null_0_0|-0.300000012|0_0|-1|0_0|-0.300000012|0_0|-1|0
 	attN = top,andromeda.avionics.s1.1_4293957404_0|0.300000012|0_0|1|0_0|0.300000012|0_0|1|0
 	EVENTS
@@ -927,6 +900,29 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleJettison
+		isEnabled = True
+		activejettisonName = fairing1
+		isJettisoned = True
+		shroudHideOverride = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleRCSFX
 		isEnabled = True
 		rcsEnabled = True
@@ -959,13 +955,13 @@ PART
 }
 PART
 {
-	part = Andromeda.Antenna.2_4293951042
+	part = andromeda.low.gain.antenna.srf.1_4293951042
 	partName = Part
-	persistentId = 1728221287
-	pos = -0.405713052,13.8243256,-0.405701607
+	persistentId = 1134227902
+	pos = -0.405713022,13.8243256,-0.405701578
 	attPos = 0,0,0
 	attPos0 = -0.405712724,0.21637249,-0.405712694
-	rot = 0.641854823,-0.275249779,-0.265864998,-0.664511681
+	rot = 0.641854763,-0.275249809,-0.265864998,-0.6645118
 	attRot = -0.342020214,0,0,0.939692855
 	attRot0 = 0.641854823,-0.275249779,-0.265864998,-0.664511681
 	mir = 1,1,1
@@ -975,17 +971,17 @@ PART
 	istg = 4
 	resPri = 0
 	dstg = 2
-	sidx = -1
-	sqor = -1
-	sepI = 2
+	sidx = 0
+	sqor = 4
+	sepI = 4
 	attm = 1
 	sameVesselCollision = False
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = Andromeda.Antenna.2_4293950426
-	sym = Andromeda.Antenna.2_4293950388
-	sym = Andromeda.Antenna.2_4293950350
+	sym = andromeda.low.gain.antenna.srf.1_4292608764
+	sym = andromeda.low.gain.antenna.srf.1_4293950388
+	sym = andromeda.low.gain.antenna.srf.1_4293950350
 	srfN = srfAttach,andromeda.engine.s1.1_4293952572,collider,0|0|0,0|0|-1,0|0|0
 	EVENTS
 	{
@@ -1050,18 +1046,72 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_type
+		currentSubtype = m_type_1
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
-	part = Andromeda.Antenna.2_4293950426
+	part = andromeda.low.gain.antenna.srf.1_4292608764
 	partName = Part
-	persistentId = 2359416364
+	persistentId = 2063125616
 	pos = -0.405713022,13.8243256,0.405723751
 	attPos = 0,0,0
 	attPos0 = -0.405712694,0.21637249,0.405712664
-	rot = 0.265864938,-0.664511681,-0.641854823,-0.27524972
-	attRot = -0.342020214,0,0,0.939692676
-	attRot0 = 0.265864938,-0.664511681,-0.641854823,-0.27524972
+	rot = -0.265864938,0.6645118,0.641854823,0.275249779
+	attRot = 0.342020154,1.68162799E-08,1.57268687E-09,-0.939692795
+	attRot0 = -0.265864938,0.6645118,0.641854823,0.275249779
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -1069,17 +1119,17 @@ PART
 	istg = 4
 	resPri = 0
 	dstg = 2
-	sidx = -1
-	sqor = -1
-	sepI = 2
+	sidx = 0
+	sqor = 4
+	sepI = 4
 	attm = 1
 	sameVesselCollision = False
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = Andromeda.Antenna.2_4293950388
-	sym = Andromeda.Antenna.2_4293950350
-	sym = Andromeda.Antenna.2_4293951042
+	sym = andromeda.low.gain.antenna.srf.1_4293950388
+	sym = andromeda.low.gain.antenna.srf.1_4293950350
+	sym = andromeda.low.gain.antenna.srf.1_4293951042
 	srfN = srfAttach,andromeda.engine.s1.1_4293952572,collider,0|0|0,0|0|-1,0|0|0
 	EVENTS
 	{
@@ -1144,16 +1194,70 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_type
+		currentSubtype = m_type_1
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
-	part = Andromeda.Antenna.2_4293950388
+	part = andromeda.low.gain.antenna.srf.1_4293950388
 	partName = Part
-	persistentId = 3997209347
-	pos = 0.405712426,13.8243256,0.405723751
+	persistentId = 348266920
+	pos = 0.405712306,13.8243256,0.405723751
 	attPos = 0,0,0
 	attPos0 = 0.405712754,0.21637249,0.405712664
-	rot = -0.265865028,-0.664511681,-0.641854823,0.275249809
+	rot = 0.265864998,0.6645118,0.641854763,-0.275249809
 	attRot = -0.342020214,0,0,0.939692676
 	attRot0 = -0.265865028,-0.664511681,-0.641854823,0.275249809
 	mir = 1,1,1
@@ -1163,17 +1267,17 @@ PART
 	istg = 4
 	resPri = 0
 	dstg = 2
-	sidx = -1
-	sqor = -1
-	sepI = 2
+	sidx = 0
+	sqor = 4
+	sepI = 4
 	attm = 1
 	sameVesselCollision = False
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = Andromeda.Antenna.2_4293950350
-	sym = Andromeda.Antenna.2_4293951042
-	sym = Andromeda.Antenna.2_4293950426
+	sym = andromeda.low.gain.antenna.srf.1_4293950350
+	sym = andromeda.low.gain.antenna.srf.1_4293951042
+	sym = andromeda.low.gain.antenna.srf.1_4292608764
 	srfN = srfAttach,andromeda.engine.s1.1_4293952572,collider,0|0|0,0|0|-1,0|0|0
 	EVENTS
 	{
@@ -1238,16 +1342,70 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_type
+		currentSubtype = m_type_1
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
-	part = Andromeda.Antenna.2_4293950350
+	part = andromeda.low.gain.antenna.srf.1_4293950350
 	partName = Part
-	persistentId = 3086885542
-	pos = 0.405712306,13.8243256,-0.405701637
+	persistentId = 538216670
+	pos = 0.405712336,13.8243256,-0.405701667
 	attPos = 0,0,0
 	attPos0 = 0.405712634,0.21637249,-0.405712724
-	rot = -0.641854823,-0.27524972,-0.265864968,0.664511681
+	rot = 0.641854823,0.275249749,0.265864909,-0.6645118
 	attRot = -0.342020214,0,0,0.939692676
 	attRot0 = -0.641854823,-0.27524972,-0.265864968,0.664511681
 	mir = 1,1,1
@@ -1257,17 +1415,17 @@ PART
 	istg = 4
 	resPri = 0
 	dstg = 2
-	sidx = -1
-	sqor = -1
-	sepI = 2
+	sidx = 0
+	sqor = 4
+	sepI = 4
 	attm = 1
 	sameVesselCollision = False
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = Andromeda.Antenna.2_4293951042
-	sym = Andromeda.Antenna.2_4293950426
-	sym = Andromeda.Antenna.2_4293950388
+	sym = andromeda.low.gain.antenna.srf.1_4293951042
+	sym = andromeda.low.gain.antenna.srf.1_4292608764
+	sym = andromeda.low.gain.antenna.srf.1_4293950388
 	srfN = srfAttach,andromeda.engine.s1.1_4293952572,collider,0|0|0,0|0|-1,0|0|0
 	EVENTS
 	{
@@ -1332,95 +1490,18 @@ PART
 		{
 		}
 	}
-}
-PART
-{
-	part = Andromeda.Antenna.1_4293949606
-	partName = Part
-	persistentId = 2458607340
-	pos = 0.285942614,15.4245071,-0.285931826
-	attPos = 0,0,0
-	attPos0 = 0.285942942,0.476553917,-0.285942912
-	rot = -0.651477754,0.271343172,-0.26985094,-0.655080318
-	attRot = 0.342020214,0,0,0.939692676
-	attRot0 = -0.651477754,0.271343172,-0.26985094,-0.655080318
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 1
-	resPri = 0
-	dstg = 0
-	sidx = 0
-	sqor = 1
-	sepI = 1
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = Andromeda.Antenna.1_4293947914
-	sym = Andromeda.Antenna.1_4293947864
-	sym = Andromeda.Antenna.1_4293947814
-	srfN = srfAttach,andromeda.crew.s1.2_4294210852,collider,0|0|0,0|0|-1,0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
 	MODULE
 	{
-		name = ModuleCargoPart
+		name = ModuleB9PartSwitch
 		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
 		stagingEnabled = True
+		moduleID = b9_type
+		currentSubtype = m_type_1
 		EVENTS
 		{
 		}
 		ACTIONS
 		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDataTransmitter
-		isEnabled = True
-		xmitIncomplete = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			StartTransmissionAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -1448,117 +1529,16 @@ PART
 		{
 		}
 	}
-}
-PART
-{
-	part = Andromeda.Antenna.1_4293947914
-	partName = Part
-	persistentId = 3295327413
-	pos = -0.28594321,15.4245071,-0.285931855
-	attPos = 0,0,0
-	attPos0 = -0.285942882,0.476553917,-0.285942942
-	rot = -0.651477754,-0.271343142,0.26985091,-0.655080318
-	attRot = 0,0,0,1
-	attRot0 = -0.651477754,-0.271343142,0.26985091,-0.655080318
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 1
-	resPri = 0
-	dstg = 0
-	sidx = 0
-	sqor = 1
-	sepI = 1
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = Andromeda.Antenna.1_4293947864
-	sym = Andromeda.Antenna.1_4293947814
-	sym = Andromeda.Antenna.1_4293949606
-	srfN = srfAttach,andromeda.crew.s1.2_4294210852,collider,0|0|0,0|0|-1,0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
 	MODULE
 	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
+		name = ModuleB9PartInfo
+		isEnabled = False
 		stagingEnabled = True
 		EVENTS
 		{
 		}
 		ACTIONS
 		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDataTransmitter
-		isEnabled = True
-		xmitIncomplete = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			StartTransmissionAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDecouple
-		isEnabled = True
-		ejectionForcePercent = 100
-		isDecoupled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			DecoupleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -1567,241 +1547,9 @@ PART
 }
 PART
 {
-	part = Andromeda.Antenna.1_4293947864
+	part = andromeda.sphere.fuel.tank.srf.1_4293946476
 	partName = Part
-	persistentId = 4005724120
-	pos = -0.28594324,15.4245071,0.285954028
-	attPos = 0,0,0
-	attPos0 = -0.285942912,0.476553917,0.285942942
-	rot = -0.26985091,-0.655080318,0.651477754,-0.271343142
-	attRot = 0,0,0,1
-	attRot0 = -0.26985091,-0.655080318,0.651477754,-0.271343142
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 1
-	resPri = 0
-	dstg = 0
-	sidx = 0
-	sqor = 1
-	sepI = 1
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = Andromeda.Antenna.1_4293947814
-	sym = Andromeda.Antenna.1_4293949606
-	sym = Andromeda.Antenna.1_4293947914
-	srfN = srfAttach,andromeda.crew.s1.2_4294210852,collider,0|0|0,0|0|-1,0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDataTransmitter
-		isEnabled = True
-		xmitIncomplete = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			StartTransmissionAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDecouple
-		isEnabled = True
-		ejectionForcePercent = 100
-		isDecoupled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			DecoupleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = Andromeda.Antenna.1_4293947814
-	partName = Part
-	persistentId = 2574185918
-	pos = 0.285942584,15.4245071,0.285953999
-	attPos = 0,0,0
-	attPos0 = 0.285942912,0.476553917,0.285942912
-	rot = 0.26985091,-0.655080318,0.651477754,0.271343142
-	attRot = 0,0,0,1
-	attRot0 = 0.26985091,-0.655080318,0.651477754,0.271343142
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 1
-	resPri = 0
-	dstg = 0
-	sidx = 0
-	sqor = 1
-	sepI = 1
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = Andromeda.Antenna.1_4293949606
-	sym = Andromeda.Antenna.1_4293947914
-	sym = Andromeda.Antenna.1_4293947864
-	srfN = srfAttach,andromeda.crew.s1.2_4294210852,collider,0|0|0,0|0|-1,0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDataTransmitter
-		isEnabled = True
-		xmitIncomplete = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			StartTransmissionAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDecouple
-		isEnabled = True
-		ejectionForcePercent = 100
-		isDecoupled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			DecoupleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = Andromeda.FuelSphere.1_4293946476
-	partName = Part
-	persistentId = 1987902882
+	persistentId = 1766272054
 	pos = -0.449826986,14.3327045,1.10995661E-05
 	attPos = 0,0,0
 	attPos0 = -0.449826658,-0.0127487183,2.68117599E-08
@@ -1823,11 +1571,11 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = Andromeda.FuelSphere.1_4293945962
-	sym = Andromeda.FuelSphere.1_4293945930
-	sym = Andromeda.FuelSphere.1_4293945898
-	sym = Andromeda.FuelSphere.1_4293945866
-	sym = Andromeda.FuelSphere.1_4293945834
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945962
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945930
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945898
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945866
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945834
 	srfN = srfAttach,andromeda.decoupler.s0p5.1_4293958048,collider,0|0|0,0|0|-1,0|0|0
 	EVENTS
 	{
@@ -1871,6 +1619,38 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_colour
+		currentSubtype = c_green
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = LiquidFuel
@@ -1896,9 +1676,9 @@ PART
 }
 PART
 {
-	part = Andromeda.FuelSphere.1_4293945962
+	part = andromeda.sphere.fuel.tank.srf.1_4293945962
 	partName = Part
-	persistentId = 3205238577
+	persistentId = 3337167951
 	pos = -0.224913612,14.3327045,0.389572412
 	attPos = 0,0,0
 	attPos0 = -0.224913299,-0.0127487183,0.389561325
@@ -1920,11 +1700,11 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = Andromeda.FuelSphere.1_4293945930
-	sym = Andromeda.FuelSphere.1_4293945898
-	sym = Andromeda.FuelSphere.1_4293945866
-	sym = Andromeda.FuelSphere.1_4293945834
-	sym = Andromeda.FuelSphere.1_4293946476
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945930
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945898
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945866
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945834
+	sym = andromeda.sphere.fuel.tank.srf.1_4293946476
 	srfN = srfAttach,andromeda.decoupler.s0p5.1_4293958048,collider,0|0|0,0|0|-1,0|0|0
 	EVENTS
 	{
@@ -1968,6 +1748,38 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_colour
+		currentSubtype = c_green
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = LiquidFuel
@@ -1993,9 +1805,9 @@ PART
 }
 PART
 {
-	part = Andromeda.FuelSphere.1_4293945930
+	part = andromeda.sphere.fuel.tank.srf.1_4293945930
 	partName = Part
-	persistentId = 3537595812
+	persistentId = 1255155887
 	pos = 0.22491309,14.3327045,0.389572382
 	attPos = 0,0,0
 	attPos0 = 0.224913403,-0.0127487183,0.389561296
@@ -2017,11 +1829,11 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = Andromeda.FuelSphere.1_4293945898
-	sym = Andromeda.FuelSphere.1_4293945866
-	sym = Andromeda.FuelSphere.1_4293945834
-	sym = Andromeda.FuelSphere.1_4293946476
-	sym = Andromeda.FuelSphere.1_4293945962
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945898
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945866
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945834
+	sym = andromeda.sphere.fuel.tank.srf.1_4293946476
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945962
 	srfN = srfAttach,andromeda.decoupler.s0p5.1_4293958048,collider,0|0|0,0|0|-1,0|0|0
 	EVENTS
 	{
@@ -2065,6 +1877,38 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_colour
+		currentSubtype = c_green
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = LiquidFuel
@@ -2090,9 +1934,9 @@ PART
 }
 PART
 {
-	part = Andromeda.FuelSphere.1_4293945898
+	part = andromeda.sphere.fuel.tank.srf.1_4293945898
 	partName = Part
-	persistentId = 4187840574
+	persistentId = 2470233207
 	pos = 0.44982633,14.3327045,1.10066176E-05
 	attPos = 0,0,0
 	attPos0 = 0.449826658,-0.0127487183,-6.6136856E-08
@@ -2114,11 +1958,11 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = Andromeda.FuelSphere.1_4293945866
-	sym = Andromeda.FuelSphere.1_4293945834
-	sym = Andromeda.FuelSphere.1_4293946476
-	sym = Andromeda.FuelSphere.1_4293945962
-	sym = Andromeda.FuelSphere.1_4293945930
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945866
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945834
+	sym = andromeda.sphere.fuel.tank.srf.1_4293946476
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945962
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945930
 	srfN = srfAttach,andromeda.decoupler.s0p5.1_4293958048,collider,0|0|0,0|0|-1,0|0|0
 	EVENTS
 	{
@@ -2162,6 +2006,38 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_colour
+		currentSubtype = c_green
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = LiquidFuel
@@ -2187,9 +2063,9 @@ PART
 }
 PART
 {
-	part = Andromeda.FuelSphere.1_4293945866
+	part = andromeda.sphere.fuel.tank.srf.1_4293945866
 	partName = Part
-	persistentId = 2170161968
+	persistentId = 1261181108
 	pos = 0.224912986,14.3327045,-0.389550298
 	attPos = 0,0,0
 	attPos0 = 0.224913299,-0.0127487183,-0.389561385
@@ -2211,11 +2087,11 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = Andromeda.FuelSphere.1_4293945834
-	sym = Andromeda.FuelSphere.1_4293946476
-	sym = Andromeda.FuelSphere.1_4293945962
-	sym = Andromeda.FuelSphere.1_4293945930
-	sym = Andromeda.FuelSphere.1_4293945898
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945834
+	sym = andromeda.sphere.fuel.tank.srf.1_4293946476
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945962
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945930
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945898
 	srfN = srfAttach,andromeda.decoupler.s0p5.1_4293958048,collider,0|0|0,0|0|-1,0|0|0
 	EVENTS
 	{
@@ -2259,6 +2135,38 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_colour
+		currentSubtype = c_green
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = LiquidFuel
@@ -2284,9 +2192,9 @@ PART
 }
 PART
 {
-	part = Andromeda.FuelSphere.1_4293945834
+	part = andromeda.sphere.fuel.tank.srf.1_4293945834
 	partName = Part
-	persistentId = 4054599674
+	persistentId = 2492920492
 	pos = -0.224913612,14.3327045,-0.389550269
 	attPos = 0,0,0
 	attPos0 = -0.224913299,-0.0127487183,-0.389561355
@@ -2308,11 +2216,11 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = Andromeda.FuelSphere.1_4293946476
-	sym = Andromeda.FuelSphere.1_4293945962
-	sym = Andromeda.FuelSphere.1_4293945930
-	sym = Andromeda.FuelSphere.1_4293945898
-	sym = Andromeda.FuelSphere.1_4293945866
+	sym = andromeda.sphere.fuel.tank.srf.1_4293946476
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945962
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945930
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945898
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945866
 	srfN = srfAttach,andromeda.decoupler.s0p5.1_4293958048,collider,0|0|0,0|0|-1,0|0|0
 	EVENTS
 	{
@@ -2356,6 +2264,38 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_colour
+		currentSubtype = c_green
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = LiquidFuel
@@ -2381,9 +2321,9 @@ PART
 }
 PART
 {
-	part = Andromeda.FuelSphere.1_4293946774
+	part = andromeda.sphere.fuel.tank.srf.1_4293946774
 	partName = Part
-	persistentId = 1474439892
+	persistentId = 2786305784
 	pos = -0.405695438,14.3244009,-0.234217167
 	attPos = 0,0,0
 	attPos0 = -0.405695111,-0.0210523605,-0.234228238
@@ -2405,11 +2345,11 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = Andromeda.FuelSphere.1_4293945664
-	sym = Andromeda.FuelSphere.1_4293945632
-	sym = Andromeda.FuelSphere.1_4293945600
-	sym = Andromeda.FuelSphere.1_4293945568
-	sym = Andromeda.FuelSphere.1_4293945536
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945664
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945632
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945600
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945568
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945536
 	srfN = srfAttach,andromeda.decoupler.s0p5.1_4293958048,collider,0|0|0,0|0|-1,0|0|0
 	EVENTS
 	{
@@ -2453,6 +2393,38 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_colour
+		currentSubtype = c_green
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = LiquidFuel
@@ -2478,9 +2450,9 @@ PART
 }
 PART
 {
-	part = Andromeda.FuelSphere.1_4293945664
+	part = andromeda.sphere.fuel.tank.srf.1_4293945664
 	partName = Part
-	persistentId = 1925559036
+	persistentId = 2975452598
 	pos = -0.405695498,14.3244009,0.234239221
 	attPos = 0,0,0
 	attPos0 = -0.40569517,-0.0210523605,0.234228149
@@ -2502,11 +2474,11 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = Andromeda.FuelSphere.1_4293945632
-	sym = Andromeda.FuelSphere.1_4293945600
-	sym = Andromeda.FuelSphere.1_4293945568
-	sym = Andromeda.FuelSphere.1_4293945536
-	sym = Andromeda.FuelSphere.1_4293946774
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945632
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945600
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945568
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945536
+	sym = andromeda.sphere.fuel.tank.srf.1_4293946774
 	srfN = srfAttach,andromeda.decoupler.s0p5.1_4293958048,collider,0|0|0,0|0|-1,0|0|0
 	EVENTS
 	{
@@ -2550,6 +2522,38 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_colour
+		currentSubtype = c_green
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = LiquidFuel
@@ -2575,9 +2579,9 @@ PART
 }
 PART
 {
-	part = Andromeda.FuelSphere.1_4293945632
+	part = andromeda.sphere.fuel.tank.srf.1_4293945632
 	partName = Part
-	persistentId = 837055917
+	persistentId = 1319261384
 	pos = -3.1253191E-07,14.3244009,0.468467504
 	attPos = 0,0,0
 	attPos0 = 2.4901281E-09,-0.0210523605,0.468456417
@@ -2599,11 +2603,11 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = Andromeda.FuelSphere.1_4293945600
-	sym = Andromeda.FuelSphere.1_4293945568
-	sym = Andromeda.FuelSphere.1_4293945536
-	sym = Andromeda.FuelSphere.1_4293946774
-	sym = Andromeda.FuelSphere.1_4293945664
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945600
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945568
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945536
+	sym = andromeda.sphere.fuel.tank.srf.1_4293946774
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945664
 	srfN = srfAttach,andromeda.decoupler.s0p5.1_4293958048,collider,0|0|0,0|0|-1,0|0|0
 	EVENTS
 	{
@@ -2647,6 +2651,38 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_colour
+		currentSubtype = c_green
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = LiquidFuel
@@ -2672,9 +2708,9 @@ PART
 }
 PART
 {
-	part = Andromeda.FuelSphere.1_4293945600
+	part = andromeda.sphere.fuel.tank.srf.1_4293945600
 	partName = Part
-	persistentId = 4229243044
+	persistentId = 3080134288
 	pos = 0.405694813,14.3244009,0.23423928
 	attPos = 0,0,0
 	attPos0 = 0.40569514,-0.0210523605,0.234228209
@@ -2696,11 +2732,11 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = Andromeda.FuelSphere.1_4293945568
-	sym = Andromeda.FuelSphere.1_4293945536
-	sym = Andromeda.FuelSphere.1_4293946774
-	sym = Andromeda.FuelSphere.1_4293945664
-	sym = Andromeda.FuelSphere.1_4293945632
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945568
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945536
+	sym = andromeda.sphere.fuel.tank.srf.1_4293946774
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945664
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945632
 	srfN = srfAttach,andromeda.decoupler.s0p5.1_4293958048,collider,0|0|0,0|0|-1,0|0|0
 	EVENTS
 	{
@@ -2744,6 +2780,38 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_colour
+		currentSubtype = c_green
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = LiquidFuel
@@ -2769,9 +2837,9 @@ PART
 }
 PART
 {
-	part = Andromeda.FuelSphere.1_4293945568
+	part = andromeda.sphere.fuel.tank.srf.1_4293945568
 	partName = Part
-	persistentId = 3721539759
+	persistentId = 451720302
 	pos = 0.405694842,14.3244009,-0.234217122
 	attPos = 0,0,0
 	attPos0 = 0.40569517,-0.0210523605,-0.234228194
@@ -2793,11 +2861,11 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = Andromeda.FuelSphere.1_4293945536
-	sym = Andromeda.FuelSphere.1_4293946774
-	sym = Andromeda.FuelSphere.1_4293945664
-	sym = Andromeda.FuelSphere.1_4293945632
-	sym = Andromeda.FuelSphere.1_4293945600
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945536
+	sym = andromeda.sphere.fuel.tank.srf.1_4293946774
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945664
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945632
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945600
 	srfN = srfAttach,andromeda.decoupler.s0p5.1_4293958048,collider,0|0|0,0|0|-1,0|0|0
 	EVENTS
 	{
@@ -2841,6 +2909,38 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_colour
+		currentSubtype = c_green
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = LiquidFuel
@@ -2866,9 +2966,9 @@ PART
 }
 PART
 {
-	part = Andromeda.FuelSphere.1_4293945536
+	part = andromeda.sphere.fuel.tank.srf.1_4293945536
 	partName = Part
-	persistentId = 2596439927
+	persistentId = 4151762055
 	pos = -1.92864746E-07,14.3244009,-0.468445331
 	attPos = 0,0,0
 	attPos0 = 1.22157303E-07,-0.0210523605,-0.468456417
@@ -2890,11 +2990,11 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = Andromeda.FuelSphere.1_4293946774
-	sym = Andromeda.FuelSphere.1_4293945664
-	sym = Andromeda.FuelSphere.1_4293945632
-	sym = Andromeda.FuelSphere.1_4293945600
-	sym = Andromeda.FuelSphere.1_4293945568
+	sym = andromeda.sphere.fuel.tank.srf.1_4293946774
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945664
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945632
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945600
+	sym = andromeda.sphere.fuel.tank.srf.1_4293945568
 	srfN = srfAttach,andromeda.decoupler.s0p5.1_4293958048,collider,0|0|0,0|0|-1,0|0|0
 	EVENTS
 	{
@@ -2927,6 +3027,38 @@ PART
 		beingAttached = False
 		beingSettled = False
 		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_colour
+		currentSubtype = c_green
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -2965,7 +3097,7 @@ PART
 {
 	part = tantares.parachute.s0.1_4293965532
 	partName = Part
-	persistentId = 723448235
+	persistentId = 1482953838
 	pos = -3.15022049E-07,15.5129528,1.10727542E-05
 	attPos = 0,0,0
 	attPos0 = 0,0.56499958,0
@@ -3118,7 +3250,7 @@ PART
 {
 	part = andromeda.engine.s0.1_4293959254
 	partName = Part
-	persistentId = 726084759
+	persistentId = 1291282310
 	pos = -3.15022049E-07,15.8817024,1.10727542E-05
 	attPos = 0,0,0
 	attPos0 = 0,0.368749619,0
@@ -3240,6 +3372,598 @@ PART
 	{
 		name = ModuleSurfaceFX
 		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = andromeda.low.gain.antenna.srf.1_4293947914
+	partName = Part
+	persistentId = 1271171240
+	pos = -0.242265895,15.4706736,-0.242254496
+	attPos = 0,0,0
+	attPos0 = -0.242265582,0.522720337,-0.242265567
+	rot = -0.663219631,-0.26641798,0.274714589,-0.643189788
+	attRot = 0.30070585,9.67527392E-10,-8.90291396E-09,0.953716934
+	attRot0 = -0.663219631,-0.26641798,0.274714589,-0.643189788
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 0
+	sidx = 0
+	sqor = 1
+	sepI = 1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = andromeda.low.gain.antenna.srf.1_4292627354
+	sym = andromeda.low.gain.antenna.srf.1_4292627292
+	sym = andromeda.low.gain.antenna.srf.1_4292627230
+	srfN = srfAttach,andromeda.crew.s1.2_4294210852,collider,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDataTransmitter
+		isEnabled = True
+		xmitIncomplete = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			StartTransmissionAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_type
+		currentSubtype = m_type_2
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = andromeda.low.gain.antenna.srf.1_4292627354
+	partName = Part
+	persistentId = 2783168293
+	pos = -0.24226588,15.4706736,0.242276624
+	attPos = 0,0,0
+	attPos0 = -0.242265567,0.522720337,0.242265552
+	rot = -0.274714589,-0.643189788,0.66321969,-0.266417891
+	attRot = 0,0,0,1
+	attRot0 = -0.181886509,-0.812855005,0.439112872,-0.336695522
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 0
+	sidx = 0
+	sqor = 1
+	sepI = 1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = andromeda.low.gain.antenna.srf.1_4292627292
+	sym = andromeda.low.gain.antenna.srf.1_4292627230
+	sym = andromeda.low.gain.antenna.srf.1_4293947914
+	srfN = srfAttach,andromeda.crew.s1.2_4294210852,collider,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDataTransmitter
+		isEnabled = True
+		xmitIncomplete = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			StartTransmissionAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_type
+		currentSubtype = m_type_2
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = andromeda.low.gain.antenna.srf.1_4292627292
+	partName = Part
+	persistentId = 3860534755
+	pos = 0.242265284,15.4706736,0.242276624
+	attPos = 0,0,0
+	attPos0 = 0.242265597,0.522720337,0.242265552
+	rot = 0.274714619,-0.643189788,0.663219631,0.26641801
+	attRot = 0,0,0,1
+	attRot0 = 0.181886524,-0.812855005,0.439112872,0.336695641
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 0
+	sidx = 0
+	sqor = 1
+	sepI = 1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = andromeda.low.gain.antenna.srf.1_4292627230
+	sym = andromeda.low.gain.antenna.srf.1_4293947914
+	sym = andromeda.low.gain.antenna.srf.1_4292627354
+	srfN = srfAttach,andromeda.crew.s1.2_4294210852,collider,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDataTransmitter
+		isEnabled = True
+		xmitIncomplete = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			StartTransmissionAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_type
+		currentSubtype = m_type_2
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = andromeda.low.gain.antenna.srf.1_4292627230
+	partName = Part
+	persistentId = 1427851941
+	pos = 0.242265224,15.4706736,-0.242254511
+	attPos = 0,0,0
+	attPos0 = 0.242265537,0.522720337,-0.242265582
+	rot = 0.66321969,-0.266417891,0.274714589,0.643189788
+	attRot = 0,0,0,1
+	attRot0 = 0.439112872,-0.336695522,0.181886509,0.812855005
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 0
+	sidx = 0
+	sqor = 1
+	sepI = 1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = andromeda.low.gain.antenna.srf.1_4293947914
+	sym = andromeda.low.gain.antenna.srf.1_4292627354
+	sym = andromeda.low.gain.antenna.srf.1_4292627292
+	srfN = srfAttach,andromeda.crew.s1.2_4294210852,collider,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDataTransmitter
+		isEnabled = True
+		xmitIncomplete = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			StartTransmissionAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_type
+		currentSubtype = m_type_2
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
 		stagingEnabled = True
 		EVENTS
 		{

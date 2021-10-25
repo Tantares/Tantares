@@ -1,8 +1,8 @@
 ship = [Soyuz] 7K-L1
-version = 1.11.1
+version = 1.12.2
 description = 
 type = VAB
-size = 1.57500005,3.03749847,1.76291466
+size = 1.57500005,3.02499771,1.76291466
 steamPublishedFileId = 0
 persistentId = 3391798750
 rot = 0,0,0,0
@@ -31,7 +31,7 @@ PART
 	resPri = 0
 	dstg = 1
 	sidx = 0
-	sqor = 1
+	sqor = 0
 	sepI = 0
 	attm = 0
 	sameVesselCollision = False
@@ -327,7 +327,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 1
+	sepI = 2
 	attm = 0
 	sameVesselCollision = False
 	modCost = 0
@@ -1564,7 +1564,7 @@ PART
 	resPri = 0
 	dstg = 6
 	sidx = 0
-	sqor = 6
+	sqor = 1
 	sepI = 0
 	attm = 0
 	sameVesselCollision = False
@@ -1847,7 +1847,7 @@ PART
 		launchUT = -1
 		currentRotation = (0.707106829, 0, 0, -0.707106829)
 		storedAnimationTime = 0
-		storedAnimationSpeed = -10
+		storedAnimationSpeed = 1
 		deployState = RETRACTED
 		stagingEnabled = True
 		EVENTS
@@ -1969,7 +1969,7 @@ PART
 		launchUT = -1
 		currentRotation = (0.707106829, 0, 0, -0.707106829)
 		storedAnimationTime = 0
-		storedAnimationSpeed = -10
+		storedAnimationSpeed = 1
 		deployState = RETRACTED
 		stagingEnabled = True
 		EVENTS

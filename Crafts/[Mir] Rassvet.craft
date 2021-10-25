@@ -1,8 +1,8 @@
-ship = [Rassvet] KSP 1.12
+ship = [Mir] Rassvet
 version = 1.12.2
 description = 
 type = VAB
-size = 2.8125,3.54360962,1.56962943
+size = 2.8125,3.41861153,1.56962943
 steamPublishedFileId = 0
 persistentId = 1687218720
 rot = 0,0,0,0
@@ -16,7 +16,7 @@ PART
 {
 	part = mira.crew.s1p2.1_4293709408
 	partName = Part
-	persistentId = 1762705746
+	persistentId = 487619683
 	pos = 0,15,0
 	attPos = 0,0,0
 	attPos0 = 0,15,0
@@ -39,9 +39,9 @@ PART
 	modMass = 0
 	modSize = 0,0,0
 	link = octans.docking.port.s0p5.1.female_4293685618
-	link = castor.control.s0p5.1_4293676676
+	link = octans.docking.port.s0p5.1.male_4293675118
 	attN = bottom,octans.docking.port.s0p5.1.female_4293685618_0|-1.375|0_0|-1|0_0|-1.375|0_0|-1|0
-	attN = top,castor.control.s0p5.1_4293676676_0|1.375|0_0|1|0_0|1.375|0_0|1|0
+	attN = top,octans.docking.port.s0p5.1.male_4293675118_0|1.375|0_0|1|0_0|1.375|0_0|1|0
 	EVENTS
 	{
 	}
@@ -112,25 +112,21 @@ PART
 			CycleAction
 			{
 				actionGroup = None
-				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
 			Activate
 			{
 				actionGroup = None
-				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
 			Deactivate
 			{
 				actionGroup = None
-				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
 			Toggle
 			{
 				actionGroup = None
-				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
 		}
@@ -144,7 +140,7 @@ PART
 		isEnabled = True
 		stagingEnabled = True
 		moduleID = b9_mesh
-		currentSubtype = m_payload
+		currentSubtype = m_default
 		EVENTS
 		{
 		}
@@ -161,22 +157,7 @@ PART
 		isEnabled = True
 		stagingEnabled = True
 		moduleID = b9_colour
-		currentSubtype = c_white
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTorqueController
-		isEnabled = True
-		stagingEnabled = True
+		currentSubtype = c_orange
 		EVENTS
 		{
 		}
@@ -259,7 +240,7 @@ PART
 {
 	part = octans.docking.port.s0p5.1.female_4293685618
 	partName = Part
-	persistentId = 1262432203
+	persistentId = 2304143679
 	pos = 0,13.5500002,0
 	attPos = 0,0,0
 	attPos0 = 0,-1.44999981,0
@@ -425,7 +406,7 @@ PART
 		isEnabled = True
 		stagingEnabled = True
 		moduleID = b9_colour_1
-		currentSubtype = c_grey
+		currentSubtype = c_black
 		EVENTS
 		{
 		}
@@ -454,260 +435,12 @@ PART
 }
 PART
 {
-	part = castor.control.s0p5.1_4293676676
-	partName = Part
-	persistentId = 436721614
-	pos = 0,16.4375,0
-	attPos = 0,0,0
-	attPos0 = 0,1.4375,0
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 0
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	link = octans.docking.port.s0p5.1.male_4293675118
-	attN = bottom,mira.crew.s1p2.1_4293709408_0|-0.0625|0_0|-1|0_0|-0.0625|0_0|-1|0
-	attN = top,octans.docking.port.s0p5.1.male_4293675118_0|0.0625|0_0|1|0_0|0.0625|0_0|1|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleCommand
-		isEnabled = True
-		hibernation = False
-		hibernateOnWarp = False
-		activeControlPointName = _default
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			MakeReferenceToggle
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			HibernateToggle
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDataTransmitter
-		isEnabled = True
-		xmitIncomplete = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			StartTransmissionAction
-			{
-				actionGroup = None
-				active = False
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleKerbNetAccess
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			OpenKerbNetAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleScienceContainer
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			CollectAllAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleReactionWheel
-		isEnabled = True
-		actuatorModeCycle = 0
-		authorityLimiter = 100
-		stateString = Active
-		stagingEnabled = True
-		WheelState = Active
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			CycleAction
-			{
-				actionGroup = None
-				active = False
-				wasActiveBeforePartWasAdjusted = False
-			}
-			Activate
-			{
-				actionGroup = None
-				active = False
-				wasActiveBeforePartWasAdjusted = False
-			}
-			Deactivate
-			{
-				actionGroup = None
-				active = False
-				wasActiveBeforePartWasAdjusted = False
-			}
-			Toggle
-			{
-				actionGroup = None
-				active = False
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleSAS
-		isEnabled = True
-		standaloneToggle = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTorqueController
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTripLogger
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		Log
-		{
-			flight = 0
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = ElectricCharge
-		amount = 75
-		maxAmount = 75
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
 	part = octans.docking.port.s0p5.1.male_4293675118
 	partName = Part
-	persistentId = 280680870
-	pos = 0,16.5749989,0
+	persistentId = 3645158399
+	pos = 0,16.4500008,0
 	attPos = 0,0,0
-	attPos0 = 0,0.237499237,0
+	attPos0 = 0,1.45000076,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -726,7 +459,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	attN = bottom,castor.control.s0p5.1_4293676676_0|-0.075000003|0_0|-1|0_0|-0.075000003|0_0|-1|0
+	attN = bottom,mira.crew.s1p2.1_4293709408_0|-0.075000003|0_0|-1|0_0|-0.075000003|0_0|-1|0
 	attN = top,Null_0_0|0.075000003|0_0|1|0_0|0.075000003|0_0|1|0
 	EVENTS
 	{
@@ -914,7 +647,7 @@ PART
 		isEnabled = True
 		stagingEnabled = True
 		moduleID = b9_colour_1
-		currentSubtype = c_white
+		currentSubtype = c_black
 		EVENTS
 		{
 		}

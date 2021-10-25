@@ -1,10 +1,10 @@
 ship = [Mir] Kvant-1
-version = 1.10.1
+version = 1.12.2
 description = 
-type = SPH
-size = 3.84301686,8.74377441,4.51575756
+type = VAB
+size = 3.84899592,8.69091034,4.65856504
 steamPublishedFileId = 0
-persistentId = 2280967612
+persistentId = 1273085474
 rot = 0,0,0,0
 missionFlag = Squad/Flags/default
 vesselType = Debris
@@ -14,15 +14,15 @@ OverrideAxisControl = 0,0,0,0
 OverrideGroupNames = ,,,
 PART
 {
-	part = octans.docking.port.s0p5.2.male_4293960876
+	part = octans.docking.port.s0p5.1.male_4293960876
 	partName = Part
-	persistentId = 500723741
-	pos = 0.586475432,14.2859354,-6.10895157
+	persistentId = 1946483614
+	pos = 1.82074058,15.1687708,0.680692792
 	attPos = 0,0,0
-	attPos0 = 0.586475432,14.2859354,-6.10895157
-	rot = 0,-0.707106769,-0.707106769,0
-	attRot = 0,-0.99999994,0,0
-	attRot0 = 0.707106769,0,0,0.707106769
+	attPos0 = 1.82074058,15.1687708,0.680692792
+	rot = 0,0.707106769,0.707106769,0
+	attRot = 0,0.707106709,0.707106709,0
+	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Mirror
 	autostrutMode = Heaviest
@@ -39,6 +39,8 @@ PART
 	modMass = 0
 	modSize = 0,0,0
 	link = acamar.adapter.s2.s0p5.1_4293958900
+	link = atria.high.gain.antenna.srf.3_4290363188
+	link = atria.low.gain.antenna.srf.3_4290362570
 	attN = bottom,acamar.adapter.s2.s0p5.1_4293958900_0|-0.075000003|0_0|-1|0_0|-0.075000003|0_0|-1|0
 	attN = top,Null_0_0|0.075000003|0_0|1|0_0|0.075000003|0_0|1|0
 	EVENTS
@@ -71,6 +73,9 @@ PART
 		isEnabled = True
 		acquireForceTweak = 100
 		crossfeed = True
+		nodeIsLocked = True
+		targetAngle = 0
+		inverted = False
 		stagingEnabled = False
 		state = Ready
 		dockUId = 0
@@ -80,6 +85,21 @@ PART
 		}
 		ACTIONS
 		{
+			ToggleLockedAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ServoEngageLockAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ServoDisgageLockAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
 			UndockAction
 			{
 				actionGroup = None
@@ -109,6 +129,20 @@ PART
 			{
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		AXISGROUPS
+		{
+			targetAngle
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 			}
 		}
 		UPGRADESAPPLIED
@@ -143,6 +177,7 @@ PART
 			{
 				axisGroup = None
 				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
 				axisInverted = None
 				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
@@ -156,11 +191,77 @@ PART
 	}
 	MODULE
 	{
-		name = ModulePartVariants
+		name = ModuleB9PartSwitch
 		isEnabled = True
-		useVariantMass = True
 		stagingEnabled = True
-		selectedVariant = tantares_cream
+		moduleID = b9_mesh
+		currentSubtype = m_type_1
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_type
+		currentSubtype = m_type_2
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_colour_1
+		currentSubtype = c_tan
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_colour_2
+		currentSubtype = c_black
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
 		EVENTS
 		{
 		}
@@ -176,15 +277,15 @@ PART
 {
 	part = acamar.adapter.s2.s0p5.1_4293958900
 	partName = Part
-	persistentId = 4194966139
-	pos = 0.586475432,14.2859354,-6.55895233
+	persistentId = 1323010562
+	pos = 1.82074058,15.1687708,0.230693012
 	attPos = 0,0,0
 	attPos0 = 0,-0.449999809,0
-	rot = 0,-0.707106769,-0.707106769,0
+	rot = 0,0.707106769,0.707106769,0
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
-	symMethod = Mirror
+	symMethod = Radial
 	autostrutMode = Heaviest
 	rigidAttachment = False
 	istg = 0
@@ -198,9 +299,9 @@ PART
 	modCost = 0
 	modMass = 1.40129846E-45
 	modSize = 0,0,0
-	link = acamar.crew.s2.1_4293956246
-	attN = bottom,acamar.crew.s2.1_4293956246_0|-0.375|0_0|-1|0_0|-0.375|0_0|-1|0
-	attN = top,octans.docking.port.s0p5.2.male_4293960876_0|0.375|0_0|1|0_0|0.375|0_0|1|0
+	link = acamar.crew.s2.1_4290399818
+	attN = bottom,acamar.crew.s2.1_4290399818_0|-0.375|0_0|-1|0_0|-0.375|0_0|-1|0
+	attN = top,octans.docking.port.s0p5.1.male_4293960876_0|0.375|0_0|1|0_0|0.375|0_0|1|0
 	EVENTS
 	{
 	}
@@ -233,7 +334,7 @@ PART
 		nArcs = 2
 		ejectionForce = 100
 		useClamshell = True
-		isCapped = True
+		isCapped = False
 		stagingEnabled = True
 		fsm = st_idle
 		EVENTS
@@ -265,18 +366,18 @@ PART
 }
 PART
 {
-	part = acamar.crew.s2.1_4293956246
+	part = acamar.crew.s2.1_4290399818
 	partName = Part
-	persistentId = 702206285
-	pos = 0.586475432,14.2859354,-7.37145233
+	persistentId = 1226046252
+	pos = 1.82074058,15.1687708,-0.581806898
 	attPos = 0,0,0
-	attPos0 = 0,-0.812499523,-1.78813778E-07
-	rot = 0.707106769,0,0,-0.707106769
-	attRot = 0.999999881,0,0,0
-	attRot0 = 0,0,-1,0
+	attPos0 = 0,-0.812500119,0
+	rot = 0,0.707106769,0.707106769,0
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	autostrutMode = Heaviest
+	autostrutMode = Off
 	rigidAttachment = False
 	istg = 0
 	resPri = 0
@@ -289,12 +390,12 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = rana.mount.srf.1_4293940830
-	link = acamar.science.processor.s2.1_4293955940
-	link = acamar.solar.srf.2_4293941992
 	link = acamar.solar.srf.2_4293363606
-	attN = bottom,acamar.adapter.s2.s0p5.1_4293958900_0|-0.4375|0_0|-1|0_0|-0.4375|0_0|-1|0
-	attN = top,acamar.science.processor.s2.1_4293955940_0|0.4375|0_0|1|0_0|0.4375|0_0|1|0
+	link = acamar.solar.srf.2_4290399232
+	link = rana.mount.srf.1_4293940830
+	link = acamar.science.processor.s2.1_4290393666
+	attN = bottom,acamar.science.processor.s2.1_4290393666_0|-0.4375|0_0|-1|0_0|-0.4375|0_0|-1|0
+	attN = top,acamar.adapter.s2.s0p5.1_4293958900_0|0.4375|0_0|1|0_0|0.4375|0_0|1|0
 	EVENTS
 	{
 	}
@@ -467,9 +568,20 @@ PART
 	}
 	RESOURCE
 	{
-		name = MonoPropellant
-		amount = 30
-		maxAmount = 30
+		name = LiquidFuel
+		amount = 18
+		maxAmount = 18
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 22
+		maxAmount = 22
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -479,17 +591,231 @@ PART
 }
 PART
 {
+	part = acamar.solar.srf.2_4293363606
+	partName = Part
+	persistentId = 3683383465
+	pos = 3.07023859,15.1687708,-0.392234683
+	attPos = 0,0,0
+	attPos0 = -1.24949813,0.189572245,0
+	rot = -0.49999997,0.49999997,0.49999997,-0.5
+	attRot = 0,0,0,1
+	attRot0 = 0,0.707106829,2.98023224E-08,0.707106769
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = acamar.solar.srf.2_4290399232
+	srfN = srfAttach,acamar.crew.s2.1_4290399818,collider,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDeployableSolarPanel
+		isEnabled = True
+		efficiencyMult = 1
+		launchUT = -1
+		currentRotation = (0.707106829, 0, 0, -0.707106829)
+		storedAnimationTime = 0
+		storedAnimationSpeed = 1
+		deployState = RETRACTED
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ExtendPanelsAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ExtendAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			RetractAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = acamar.solar.srf.2_4290399232
+	partName = Part
+	persistentId = 96255947
+	pos = 0.57124269,15.1687708,-0.392234683
+	attPos = 0,0,0
+	attPos0 = 1.24949813,0.189572245,0
+	rot = -0.499999911,-0.5,-0.5,-0.49999997
+	attRot = 0,0,0,1
+	attRot0 = 0,0.707106709,2.98023224E-08,-0.707106829
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = acamar.solar.srf.2_4293363606
+	srfN = srfAttach,acamar.crew.s2.1_4290399818,collider,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDeployableSolarPanel
+		isEnabled = True
+		efficiencyMult = 1
+		launchUT = -1
+		currentRotation = (0.707106829, 0, 0, -0.707106829)
+		storedAnimationTime = 0
+		storedAnimationSpeed = 1
+		deployState = RETRACTED
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ExtendPanelsAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ExtendAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			RetractAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
 	part = rana.mount.srf.1_4293940830
 	partName = Part
-	persistentId = 466142690
-	pos = 0.586475432,15.5298119,-7.30598307
-	attPos = 0,0,0
-	attPos0 = 0,-0.065469265,1.24387574
-	rot = 0.173648149,0,0,0.984807849
-	attRot = 0.173648193,0,0,0.984807789
-	attRot0 = -0.819151998,0,0,-0.57357645
+	persistentId = 25247077
+	pos = 1.82074058,16.3597813,-0.398096561
+	attPos = 0,4.76837158E-07,-0.0566663742
+	attPos0 = 0,0.183709666,1.24767673
+	rot = -0.173648059,0,0,-0.984807789
+	attRot = 0,0.984807789,-0.173648179,0
+	attRot0 = 0,0.819151998,0.57357657,0
 	mir = 1,1,1
-	symMethod = Mirror
+	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
 	istg = 0
@@ -504,7 +830,7 @@ PART
 	modMass = 0
 	modSize = 0,0,0
 	link = rana.truss.srf.2_4293940510
-	srfN = srfAttach,acamar.crew.s2.1_4293956246,collider,0|0|0,0|-1|0,0|0|0
+	srfN = srfAttach,acamar.crew.s2.1_4290399818,collider,0|0|0,0|-1|0,0|0|0
 	attN = top,rana.truss.srf.2_4293940510_0|0.150000006|0_0|1|0_0|0.150000006|0_0|1|0
 	EVENTS
 	{
@@ -530,20 +856,38 @@ PART
 	PARTDATA
 	{
 	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = rana.truss.srf.2_4293940510
 	partName = Part
-	persistentId = 2117694363
-	pos = 0.586475432,16.6104584,-6.91265869
+	persistentId = 1380577924
+	pos = 1.82074058,17.4404278,-0.00477278233
 	attPos = 0,0,0
 	attPos0 = 0,1.1500001,3.57627954E-07
-	rot = 0,-0.984807789,-0.173648298,0
+	rot = 0,0.98480773,0.173648238,0
 	attRot = 0.707106769,0,0,0.707106769
 	attRot0 = 0,-1,-1.1920929E-07,0
 	mir = 1,1,1
-	symMethod = Mirror
+	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
 	istg = 0
@@ -584,20 +928,38 @@ PART
 	PARTDATA
 	{
 	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = rana.truss.srf.2_4293940326
 	partName = Part
-	persistentId = 3697874892
-	pos = 0.586475432,18.4898434,-6.22861767
+	persistentId = 2954900361
+	pos = 1.82074058,19.3198128,0.679267526
 	attPos = 0,0,0
 	attPos0 = 0,2.00000024,1.1920929E-07
-	rot = 0,-0.984807789,-0.173648298,0
+	rot = 0,0.98480773,0.173648238,0
 	attRot = 0.707106769,0,0,0.707106769
 	attRot0 = -5.9604659E-08,0,0,1
 	mir = 1,1,1
-	symMethod = Mirror
+	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
 	istg = 0
@@ -638,20 +1000,38 @@ PART
 	PARTDATA
 	{
 	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = rana.truss.srf.2_4293940136
 	partName = Part
-	persistentId = 854961694
-	pos = 0.586475432,20.3692303,-5.54457664
+	persistentId = 607249143
+	pos = 1.82074058,21.1991997,1.3633076
 	attPos = 0,0,0
 	attPos0 = 0,2,4.76837158E-07
-	rot = 0,-0.984807789,-0.173648179,0
+	rot = 0,0.984807849,0.173648149,0
 	attRot = 0.57357645,0,0,0.819152117
 	attRot0 = 1.19209304E-07,0,0,1
 	mir = 1,1,1
-	symMethod = Mirror
+	symMethod = Radial
 	autostrutMode = Heaviest
 	rigidAttachment = False
 	istg = 0
@@ -692,20 +1072,38 @@ PART
 	PARTDATA
 	{
 	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = rana.control.srf.1_4293939934
 	partName = Part
-	persistentId = 3065077805
-	pos = 0.586475432,21.4851131,-5.13842821
+	persistentId = 1985721339
+	pos = 1.82074058,22.3150826,1.76945555
 	attPos = 0,0,0
 	attPos0 = 0,1.18749952,1.41560861E-07
-	rot = 0,-0.984807789,-0.173648298,0
+	rot = 0,0.98480773,0.173648238,0
 	attRot = 0.707106769,0,0,0.707106769
 	attRot0 = -5.96046448E-08,0,0,1
 	mir = 1,1,1
-	symMethod = Mirror
+	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
 	istg = 0
@@ -746,6 +1144,42 @@ PART
 	}
 	PARTDATA
 	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 	MODULE
 	{
@@ -927,15 +1361,15 @@ PART
 {
 	part = octans.basic.rcs.srf.2_4293934974
 	partName = Part
-	persistentId = 3442614863
-	pos = 0.211475313,21.6456146,-5.17177248
+	persistentId = 3349972880
+	pos = 1.44574046,22.475584,1.73611176
 	attPos = 0,0,0
 	attPos0 = 0.375000149,0.139411837,0.0862284005
-	rot = -0.405579656,0.579228044,-0.405579895,0.579227865
+	rot = 0.405579627,-0.579228044,0.405579925,-0.579227805
 	attRot = 0,0,-0.707106769,0.707106769
 	attRot0 = -0.500000119,0.49999997,0.49999994,-0.5
 	mir = 1,1,1
-	symMethod = Mirror
+	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
 	istg = 0
@@ -976,6 +1410,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleRCSFX
 		isEnabled = True
 		rcsEnabled = True
@@ -1000,22 +1452,6 @@ PART
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
 			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModulePartVariants
-		isEnabled = True
-		useVariantMass = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
 		}
 		UPGRADESAPPLIED
 		{
@@ -1026,15 +1462,15 @@ PART
 {
 	part = octans.basic.rcs.srf.2_4293935252
 	partName = Part
-	persistentId = 892895849
-	pos = 0.961475551,21.5794373,-5.0043788
+	persistentId = 4145633020
+	pos = 2.1957407,22.4094067,1.90350544
 	attPos = 0,0,0
 	attPos0 = -0.375000119,0.134480417,-0.093703717
-	rot = 0.579228044,-0.405579656,-0.579227865,0.405579895
+	rot = -0.579228044,0.405579746,0.579227865,-0.405579925
 	attRot = 0,0,-0.707106769,0.707106769
 	attRot0 = -0.49999997,0.500000119,-0.5,0.49999994
 	mir = 1,1,1
-	symMethod = Mirror
+	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
 	istg = 0
@@ -1075,6 +1511,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleRCSFX
 		isEnabled = True
 		rcsEnabled = True
@@ -1104,37 +1558,21 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModulePartVariants
-		isEnabled = True
-		useVariantMass = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
-	part = acamar.science.processor.s2.1_4293955940
+	part = acamar.science.processor.s2.1_4290393666
 	partName = Part
-	persistentId = 3886377491
-	pos = 0.586475432,14.2859344,-8.43395042
+	persistentId = 605483345
+	pos = 1.82074058,15.1687708,-1.64430678
 	attPos = 0,0,0
-	attPos0 = 0,1.06249809,-9.53674316E-07
-	rot = 0,0.707106769,-0.707106769,0
-	attRot = 0,0,-0.99999994,0
-	attRot0 = 0,-1,0,0
+	attPos0 = 0,-1.0625,0
+	rot = 0,-0.707106769,0.707106769,0
+	attRot = -0.99999994,0,0,0
+	attRot0 = -1,0,0,0
 	mir = 1,1,1
 	symMethod = Radial
-	autostrutMode = Heaviest
+	autostrutMode = Off
 	rigidAttachment = False
 	istg = 0
 	resPri = 0
@@ -1147,9 +1585,9 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = octans.docking.port.s0p5.1.female_4293954552
-	attN = bottom,acamar.crew.s2.1_4293956246_0|-0.625|0_0|-1|0_0|-0.625|0_0|-1|0
-	attN = top,octans.docking.port.s0p5.1.female_4293954552_0|0.625|0_0|1|0_0|0.625|0_0|1|0
+	link = octans.docking.port.s0p5.1.female_4290372748
+	attN = bottom,acamar.crew.s2.1_4290399818_0|-0.625|0_0|-1|0_0|-0.625|0_0|-1|0
+	attN = top,octans.docking.port.s0p5.1.female_4290372748_0|0.625|0_0|1|0_0|0.625|0_0|1|0
 	EVENTS
 	{
 	}
@@ -1354,9 +1792,20 @@ PART
 	}
 	RESOURCE
 	{
-		name = MonoPropellant
-		amount = 30
-		maxAmount = 30
+		name = LiquidFuel
+		amount = 18
+		maxAmount = 18
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 22
+		maxAmount = 22
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -1366,17 +1815,17 @@ PART
 }
 PART
 {
-	part = octans.docking.port.s0p5.1.female_4293954552
+	part = octans.docking.port.s0p5.1.female_4290372748
 	partName = Part
-	persistentId = 3142592286
-	pos = 0.586475432,14.2859344,-9.18395042
+	persistentId = 2397632239
+	pos = 1.82074058,15.1687698,-2.44430685
 	attPos = 0,0,0
-	attPos0 = 0,0.75,0
-	rot = 0,0.707106769,-0.707106769,0
-	attRot = 0,0,-0.99999994,0
+	attPos0 = 0,0.799999654,2.38418522E-07
+	rot = 0,-0.707106769,0.707106769,0
+	attRot = 0,-0.707106709,0.707106709,0
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
-	symMethod = Mirror
+	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
 	istg = 0
@@ -1390,9 +1839,9 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = atria.antenna.srf.2.1_4293855490
-	link = atria.antenna.srf.1.1_4292568560
-	attN = bottom,acamar.science.processor.s2.1_4293955940_0|-0.125|0_0|-1|0_0|-0.125|0_0|-1|0
+	link = atria.high.gain.antenna.srf.3_4290362740
+	link = atria.low.gain.antenna.srf.3_4290362126
+	attN = bottom,acamar.science.processor.s2.1_4290393666_0|-0.125|0_0|-1|0_0|-0.174999997|0_0|-1|0
 	attN = top,Null_0_0|0.125|0_0|1|0_0|0.125|0_0|1|0
 	EVENTS
 	{
@@ -1424,6 +1873,9 @@ PART
 		isEnabled = True
 		acquireForceTweak = 100
 		crossfeed = True
+		nodeIsLocked = True
+		targetAngle = 0
+		inverted = False
 		stagingEnabled = False
 		state = Ready
 		dockUId = 0
@@ -1433,6 +1885,21 @@ PART
 		}
 		ACTIONS
 		{
+			ToggleLockedAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ServoEngageLockAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ServoDisgageLockAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
 			UndockAction
 			{
 				actionGroup = None
@@ -1464,15 +1931,75 @@ PART
 				wasActiveBeforePartWasAdjusted = False
 			}
 		}
+		AXISGROUPS
+		{
+			targetAngle
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+			}
+		}
 		UPGRADESAPPLIED
 		{
 		}
 	}
 	MODULE
 	{
-		name = ModulePartVariants
+		name = ModuleB9PartSwitch
 		isEnabled = True
-		useVariantMass = True
+		stagingEnabled = True
+		moduleID = b9_mesh
+		currentSubtype = m_type_1
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_type
+		currentSubtype = m_type_1
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_colour_1
+		currentSubtype = c_grey
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1487,268 +2014,20 @@ PART
 }
 PART
 {
-	part = atria.antenna.srf.2.1_4293855490
+	part = atria.high.gain.antenna.srf.3_4290363188
 	partName = Part
-	persistentId = 483672284
-	pos = 0.218947828,14.2859325,-9.18961906
+	persistentId = 1120194730
+	pos = 1.35157847,15.1687708,0.668192089
 	attPos = 0,0,0
-	attPos0 = 0.367527395,0.00566899776,5.96045652E-07
-	rot = -0.49999997,0.49999997,-0.49999997,0.5
+	attPos0 = 0.469162166,-0.0125007024,-9.31322575E-10
+	rot = 0.49999997,0.49999997,0.49999997,0.5
 	attRot = 0,0,0,1
-	attRot0 = 0,-0.707106829,2.98023224E-08,0.707106769
+	attRot0 = 0,-0.707106829,-2.98023224E-08,0.707106769
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 0
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 1
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	srfN = srfAttach,octans.docking.port.s0p5.1.female_4293954552,coll,0|0|0,0|0|-1,0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleDeployableAntenna
-		isEnabled = True
-		currentRotation = (0, 0, 0, 1)
-		storedAnimationTime = 0
-		storedAnimationSpeed = 1
-		deployState = RETRACTED
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ExtendPanelsAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ExtendAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			RetractAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDataTransmitter
-		isEnabled = True
-		xmitIncomplete = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			StartTransmissionAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModulePartVariants
-		isEnabled = True
-		useVariantMass = True
-		stagingEnabled = True
-		selectedVariant = tantares_white
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = atria.antenna.srf.1.1_4292568560
-	partName = Part
-	persistentId = 1278340990
-	pos = 0.586475372,14.6521225,-9.18192863
-	attPos = 0,0,0
-	attPos0 = 5.96045879E-08,-0.00202143192,-0.366188109
-	rot = 0,0.707106829,-0.707106709,0
-	attRot = 0,0,0,1
-	attRot0 = -5.96046519E-08,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 0
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 1
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	srfN = srfAttach,octans.docking.port.s0p5.1.female_4293954552,coll,0|0|0,0|0|-1,0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleDeployableAntenna
-		isEnabled = True
-		currentRotation = (0, 0, 0, 1)
-		storedAnimationTime = 0
-		storedAnimationSpeed = 1
-		deployState = RETRACTED
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ExtendPanelsAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ExtendAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			RetractAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDataTransmitter
-		isEnabled = True
-		xmitIncomplete = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			StartTransmissionAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModulePartVariants
-		isEnabled = True
-		useVariantMass = True
-		stagingEnabled = True
-		selectedVariant = tantares_white
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = acamar.solar.srf.2_4293941992
-	partName = Part
-	persistentId = 471852041
-	pos = -0.660032928,14.2859354,-7.58565521
-	attPos = 0,0,0
-	attPos0 = -1.24650836,0.214202538,0
-	rot = -0.49999997,0.49999997,-0.49999997,0.5
-	attRot = 0,0,0,1
-	attRot0 = -2.98023224E-08,-0.707106769,0,-0.707106829
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 0
+	istg = -1
 	resPri = 0
 	dstg = 0
 	sidx = -1
@@ -1759,8 +2038,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = acamar.solar.srf.2_4293363606
-	srfN = srfAttach,acamar.crew.s2.1_4293956246,collider,0|0|0,0|0|-1,0|0|0
+	srfN = srfAttach,octans.docking.port.s0p5.1.male_4293960876,collider_compact,0|0|0,0|0|-1,0|0|0
 	EVENTS
 	{
 	}
@@ -1787,13 +2065,29 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleDeployableSolarPanel
+		name = ModuleCargoPart
 		isEnabled = True
-		efficiencyMult = 1
-		launchUT = -1
-		currentRotation = (0.707106829, 0, 0, -0.707106829)
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDeployableAntenna
+		isEnabled = True
+		currentRotation = (0, 0, 0, 1)
 		storedAnimationTime = 0
-		storedAnimationSpeed = -10
+		storedAnimationSpeed = 1
 		deployState = RETRACTED
 		stagingEnabled = True
 		EVENTS
@@ -1821,18 +2115,88 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleDataTransmitter
+		isEnabled = True
+		xmitIncomplete = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			StartTransmissionAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_type
+		currentSubtype = m_type_1
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_colour
+		currentSubtype = c_yellow
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
-	part = acamar.solar.srf.2_4293363606
+	part = atria.high.gain.antenna.srf.3_4290362740
 	partName = Part
-	persistentId = 1024670149
-	pos = 1.83298397,14.2859354,-7.58565521
+	persistentId = 3515004076
+	pos = 2.19618177,15.1687698,-2.43316841
 	attPos = 0,0,0
-	attPos0 = 1.24650848,0.214202538,0
+	attPos0 = -0.37544173,-0.011138442,9.53674316E-07
 	rot = 0.49999997,0.49999997,-0.49999997,-0.5
 	attRot = 0,0,0,1
-	attRot0 = 2.98023224E-08,-0.707106769,0,0.707106829
+	attRot0 = 0,-0.707106829,2.98023224E-08,-0.707106769
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -1842,14 +2206,13 @@ PART
 	dstg = 0
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 1
 	sameVesselCollision = False
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = acamar.solar.srf.2_4293941992
-	srfN = srfAttach,acamar.crew.s2.1_4293956246,collider,0|0|0,0|0|-1,0|0|0
+	srfN = srfAttach,octans.docking.port.s0p5.1.female_4290372748,collider_default_1,0|0|0,0|0|-1,0|0|0
 	EVENTS
 	{
 	}
@@ -1876,13 +2239,29 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleDeployableSolarPanel
+		name = ModuleCargoPart
 		isEnabled = True
-		efficiencyMult = 1
-		launchUT = -1
-		currentRotation = (0.707106829, 0, 0, -0.707106829)
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDeployableAntenna
+		isEnabled = True
+		currentRotation = (0, 0, 0, 1)
 		storedAnimationTime = 0
-		storedAnimationSpeed = -10
+		storedAnimationSpeed = 1
 		deployState = RETRACTED
 		stagingEnabled = True
 		EVENTS
@@ -1905,6 +2284,424 @@ PART
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
 			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDataTransmitter
+		isEnabled = True
+		xmitIncomplete = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			StartTransmissionAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_type
+		currentSubtype = m_type_1
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_colour
+		currentSubtype = c_yellow
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = atria.low.gain.antenna.srf.3_4290362570
+	partName = Part
+	persistentId = 157355610
+	pos = 2.29265928,15.1687708,0.670706928
+	attPos = 0,0,0
+	attPos0 = -0.471918643,-0.00998586323,-9.31322575E-10
+	rot = -0.49999997,0.49999997,0.49999997,-0.5
+	attRot = 0,0,0,1
+	attRot0 = 0,0.707106829,2.98023224E-08,0.707106769
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,octans.docking.port.s0p5.1.male_4293960876,collider_compact,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDeployableAntenna
+		isEnabled = True
+		currentRotation = (0, 0, 0, 1)
+		storedAnimationTime = 0
+		storedAnimationSpeed = 1
+		deployState = RETRACTED
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ExtendPanelsAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ExtendAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			RetractAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDataTransmitter
+		isEnabled = True
+		xmitIncomplete = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			StartTransmissionAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_type
+		currentSubtype = m_type_1
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_colour
+		currentSubtype = c_yellow
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = atria.low.gain.antenna.srf.3_4290362126
+	partName = Part
+	persistentId = 304721801
+	pos = 1.44516599,15.1687698,-2.42454195
+	attPos = 0,0,0
+	attPos0 = 0.375575006,-0.0197649058,9.53674316E-07
+	rot = -0.49999997,0.49999997,-0.49999997,0.5
+	attRot = 0,0,0,1
+	attRot0 = 0,0.707106829,-2.98023224E-08,-0.707106769
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,octans.docking.port.s0p5.1.female_4290372748,collider_default_1,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDeployableAntenna
+		isEnabled = True
+		currentRotation = (0, 0, 0, 1)
+		storedAnimationTime = 0
+		storedAnimationSpeed = 1
+		deployState = RETRACTED
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ExtendPanelsAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ExtendAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			RetractAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDataTransmitter
+		isEnabled = True
+		xmitIncomplete = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			StartTransmissionAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_type
+		currentSubtype = m_type_1
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = b9_colour
+		currentSubtype = c_yellow
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
 		}
 		UPGRADESAPPLIED
 		{
