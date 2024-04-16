@@ -8,8 +8,8 @@
 		"ALLOW_PRE_RELEASE": false
 	},
 	"VERSION": {
-		"MAJOR": 25,
-		"MINOR": 2,
+		"MAJOR": 26,
+		"MINOR": 0,
 		"PATCH": 0
 	},
 	"KSP_VERSION":
